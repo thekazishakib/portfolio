@@ -1,0 +1,202 @@
+# Kazi Shakib — Full Portfolio Reference
+
+> Finance Instructor · Software Builder · Chess Player · Mirpur, Dhaka-1216, Bangladesh
+
+## Biography
+
+I live in Mirpur, Dhaka, where I teach finance, build software tools, and play competitive chess. As a Finance Instructor at Mentors Brother, I teach corporate finance, valuation methods (IRR, Payback Period, EBITDA), and Time Value of Money (TVM) to 100+ students, helping at-risk students achieve a 100% pass rate.
+
+Before that, I worked as a Finance Intern at Hanif Enterprise. I prepared more than 1,000 electronic payment challans and built the open-source Hanif Challan Autofiller using Python, Excel, and HTML. It cut over 3 hours of manual typing a day and won the Best Internship Award (BDT 5,000 prize).
+
+At the BAF Shaheen College Dhaka Business Club, where I was Director of IT and now help out as Alumni IT Advisor, I built the club's 11-page website with React, TypeScript, Firebase, and Vercel. I also set up Google Apps Script and AutoCrat to send out event certificates automatically.
+
+- Languages: Bengali (Native) · English (SAT 1420, DET 135)
+
+## Current Work (https://kazishakib.com/)
+
+### University Admission Preparation — Test Scores & Coursework (2026 – Present, Dhaka, Bangladesh)
+Preparing for undergraduate admission in Finance & Technology while working on digital marketing and design projects.
+- SAT Score: 1420 / 1600 (770 Math · 650 Reading & Writing)
+- Duolingo English Test (DET): 135 / 160 (CEFR C1 Proficient English)
+
+### Finance Instructor — Mentors Brother (Aug 2026 – Present, Mirpur, Dhaka)
+Teaching corporate finance, capital budgeting, and valuation to 100+ commerce students through worked examples and practice problems.
+- Teaching 8+ valuation methods, including IRR, NPV, Payback Period, and EBITDA
+- Working through Time Value of Money (TVM) and multi-period annuity problems
+- Helped at-risk students in my classes achieve a 100% final exam pass rate
+
+### Alumni IT Advisor — BAFSD Business Club (Oct 2025 – Present, BAF Shaheen College Dhaka)
+Helping the club’s executive committee maintain its 11-page website and automated certificate delivery for business events.
+- Maintaining the club's 11-page React, TypeScript, and Firebase website on Vercel
+- Running automated e-certificate delivery with Google Apps Script and AutoCrat
+- Showing new club members how to manage the site and event registrations
+
+### Economic Writer & FIDE Arena Competitor — BAFSDBC Blogs · World Chess (Ongoing, National & Online)
+Writing articles on inflation, purchasing power, and personal finance for the BAFSD Business Club while competing in the FIDE Online Arena at a 1700+ rating.
+- Published 'Why The 100 Taka Note Keeps Shrinking' on inflation and purchasing power with BAFSDBC
+- Published 'What the Numbers Don't Tell Us About Money' on personal finance and literacy
+- FIDE Online Arena rating of 1700+, ranked #16 in Bangladesh on World Chess
+
+## Education & Test Scores (https://kazishakib.com/academics)
+
+### Standardized Tests & Focus
+- SAT Score: 1420 / 1600 (770 Math · 650 Reading & Writing)
+- Duolingo English Test (DET): 135 / 160 (CEFR C1 English Score)
+- Core Academic Focus: Finance & Tech (Finance, Programming & Data Analysis)
+
+### Education History
+- SR Dream IT (2025 – 2026, Dhaka, Bangladesh): Diploma in Digital Marketing and Graphics Design — Project Based (Best Project Award)
+- BAF Shaheen College Dhaka (Nov 2023 – Oct 2025, Dhaka, Bangladesh): Higher Secondary Certificate (HSC), Business Studies — Business Studies Division · Alumni (Finance, Banking & Insurance, Accounting, Production Management & Marketing, Business Org. & Management, ICT)
+- Darussalam Government Secondary School (Jan 2020 – May 2023, Dhaka, Bangladesh): Secondary School Certificate (SSC), Business Studies — Business Studies Division · Merit (Finance & Banking, Accounting, Business Entrepreneurship, Mathematics, ICT)
+- Darussalam Government Secondary School (2018 – 2020, Dhaka, Bangladesh): Junior Secondary (Class 6–8) — Whole School Top 10 (75th Position in 1,000+ Admission Exam)
+- Dolphin Model High School (2017, Dhaka, Bangladesh): Primary School Certificate (PSC) — 95% Score
+- Dolphin Model High School (2012 – 2016, Dhaka, Bangladesh): Early Education (KG to Class 4) — 1st Position in Class (99% Score)
+
+## Selected Projects (https://kazishakib.com/projects)
+
+### BAFSD Business Club Website (Full-Stack Club Platform, 2025 – Present)
+Web platform for the BAF Shaheen College Dhaka Business Club (BAFSDBC, Est. 2015), serving as a public portal for students, sponsors, and partners with Google Sign-In and real-time admin controls.
+- Tech: React, TypeScript, Vite, Tailwind CSS, Firebase, Vercel
+- Impact: 11 Pages · Live at bafsdbc.vercel.app
+- Source: https://github.com/thekazishakib/BAF-Shaheen-College-Dhaka-Business-Club
+- Link: https://bafsdbc.vercel.app
+
+### Oxerfy Digital Agency Website (Full-Stack CMS Web App, 2026)
+A digital agency website built with React 19, Firebase, and Vite, with an admin panel for updating content.
+- Tech: React 19, TypeScript, Firebase, Vite, Tailwind CSS
+- Impact: Real-Time CMS · Live at oxerfy.com
+- Source: https://github.com/thekazishakib/Oxerfy
+- Link: https://oxerfy.com
+
+### ApporLeader — Global AI & Logic Community (EdTech & Global Community, 2026)
+A free, remote global learning community platform for Class 8–12 students worldwide, focused on logic, AI, and analytical thinking.
+- Tech: React 19, TypeScript, Firebase 11, Tailwind CSS, Vercel
+- Impact: Global EdTech · Live at apporleader.vercel.app
+- Source: https://github.com/thekazishakib/apporleader
+- Link: https://apporleader.vercel.app
+
+### Hanif Enterprise Bus Challan Autofiller (Office Automation, 2026 · v1.3.1 (MIT))
+Generates Bengali and English bus challans from Excel with automatic numbering and printable 36-seat A4 forms, where the outgoing and return trips share one challan number.
+- Tech: Python, Microsoft Excel, HTML5, Noto Serif Bengali, A4 Print
+- Impact: 3+ Hrs Saved Daily · 1,000+ Challans
+- Source: https://github.com/thekazishakib/Hanif-Enterprise-Challar-Autofiller
+- Link: https://github.com/thekazishakib/Hanif-Enterprise-Challar-Autofiller#readme
+
+### SmartBus Revenue & Collection Reconciliation (Revenue & Collection Reconciliation, 2026 · v1.3.0 (MIT))
+A Python system for bus revenue and counter collection reconciliation, with Excel workflows, a local web workstation dashboard, SQLite audit history, and printable financial reports.
+- Tech: Python 3.11+, SQLite, Microsoft Excel, Web Dashboard, PDF Export
+- Impact: 100 Daily Trips · SQLite & Excel
+- Source: https://github.com/thekazishakib/SmartBus
+- Link: https://github.com/thekazishakib/SmartBus#readme
+
+### Market Basket Analysis (2.6M+ Transactions) (Data Analysis, 2026 (MIT License))
+Market basket analysis on 2.6M+ online store orders using the Apriori algorithm to find which products 91,619 shoppers bought together across 13 categories.
+- Tech: Python, Pandas, MLxtend, Apriori Algorithm, Matplotlib, Jupyter
+- Impact: 2.6M+ Transactions · 91,619 Users
+- Source: https://github.com/thekazishakib/market-basket-analysis
+- Link: https://github.com/thekazishakib/market-basket-analysis#readme
+
+### Automated E-Certificate System (Automated Certificate Delivery, 2025)
+Built an automated certificate generation and email delivery system for BAFSD Business Club competitions, workshops, and national olympiad participants.
+- Tech: Google Apps Script, AutoCrat, Google Sheets, PDF Engine
+- Impact: 100% Automated PDF Delivery
+- Source: https://github.com/thekazishakib/BAF-Shaheen-College-Dhaka-Business-Club
+- Link: https://bafsdbc.vercel.app
+
+### Python Snake Game (First Programming Project) (First Python Project, Early Programming)
+My first programming project: a Snake game built in Python (`snake.py`).
+- Tech: Python, Game Loop Logic, Event Handling, Coordinate Math
+- Impact: First Program · Python
+- Source: https://github.com/thekazishakib/my-first-prog-project
+- Link: https://github.com/thekazishakib/my-first-prog-project
+
+## Publications (https://kazishakib.com/publication)
+
+### Why The 100 Taka Note Keeps Shrinking (BAF Shaheen College Dhaka Business Club (BAFSDBC), November 9, 2026)
+An article looking at why 100 Taka buys so much less today than a few years ago. It examines inflation trends, the Taka's exchange rate against the US dollar, rising import costs, and how middle-class households cope with rising prices, drawing on data from 13 economic and news sources.
+- Status: Published Article
+- Link: https://bafsdbc.vercel.app/blogs/why-the-100-taka-note-keeps-shrinking
+
+### Is gold really the safest investment in old age? (BAF Shaheen College Dhaka Business Club (BAFSDBC), December 9, 2025)
+Chosen by faculty advisors from about 100 student submissions for the BAF Shaheen College Dhaka Business Club (BAFSDBC). I used 3 academic papers (Baur & Lucey 2010; Baur & McDermott 2010; Erb & Harvey 2013) and 2 investor guides (FINRA; U.S. SEC Investor.gov) to look at whether holding only physical gold is actually safe in retirement.
+- Status: Selected Publication (Top Pick from ~100 Submissions)
+- Link: https://bafsdbc.vercel.app/blogs/is-gold-really-the-safest-investment-in-old-age
+
+### What the Numbers Don't Tell Us About Money (BAF Shaheen College Dhaka Business Club (BAFSDBC), June 29, 2025)
+An article on why understanding the concepts behind financial figures matters in everyday life and small business decisions. It breaks down budgeting, net worth versus liquidity, real versus nominal returns, compound interest, gross margins, and customer lifetime value.
+- Status: Published Article
+- Link: https://bafsdbc.vercel.app/blogs/what-the-numbers-dont-tell-us-about-money
+
+## Experience & Volunteering (https://kazishakib.com/experience)
+
+### Professional Experience
+#### Finance Instructor — Mentors Brother (Aug 2026 – Present, Dhaka, Bangladesh)
+Teaching corporate finance, capital budgeting, and financial math to over 100 students to help them prepare for their exams.
+- Taught financial math to 100+ students, helping at-risk students achieve a 100% pass rate (50%+ on the final exam).
+- Covered 8+ valuation methods (IRR, Payback Period, EBITDA) and 4 Time Value of Money annuity formulas (PVA, PVAU, FVA, FVAU).
+
+#### Finance Intern — Hanif Enterprise (Jan 2026 – June 2026, Dhaka, Bangladesh)
+Prepared daily electronic payment challans, built a tool to fill out forms faster, and put together weekly transaction reports.
+- Prepared 1,000+ electronic payment challans and built the bilingual Hanif Challan Autofiller, cutting 5–6 minutes per form (3+ hours a day).
+- Turned weekly CSV transaction files into clean Excel reports, and won the Best Internship Award (BDT 5,000 prize).
+
+### Volunteering & Leadership
+#### Alumni IT Advisor & Former Director of IT — BAF Shaheen College Dhaka Business Club (BAFSD Business Club) (2024 – Present (Advisor since Oct 2025))
+Ran the IT department during my HSC years and now help as Alumni IT Advisor, showing new committee members how to manage the website and event tools.
+- Built and launched the club's 11-page website (React, TypeScript, Firebase, Vercel) with Google Sign-In for admins
+- Automated e-certificate generation and bulk email delivery using Google Apps Script and AutoCrat for national events
+- Received the Principal's Recognition for Club Contributions (2025)
+
+#### Bronze Award Recipient · Volunteering & Community Service — The Duke of Edinburgh's International Award Foundation (2025)
+Completed the community service, peer tutoring, skill building, and outdoor expedition parts of the award program.
+- Put in regular volunteering hours helping students with reading and basic computer skills
+- Finished the group outdoor expedition and physical recreation requirements
+- Earned The Duke of Edinburgh's International Bronze Award
+
+#### Social Media Manager — Shaheen Runners · BAF Shaheen College Dhaka (2024 – 2025)
+Ran the social media pages and designed posts for Shaheen Runners to get students involved in campus runs and fitness events.
+- Made event announcements, graphics, and social media posts
+- Helped bring more students out to club runs and fitness events
+- Worked with club organizers to cover events and share updates online
+
+#### Academic Peer Mentor & ICTOBD Ambassador — ICT Olympiad Bangladesh (ICTOBD) & Student Community (2023 – Present)
+Volunteered as an ICTOBD Campus Ambassador and tutored classmates in Business Studies, finance math, and ICT Olympiad prep.
+- Helped classmates practice Time Value of Money (TVM), basic accounting, and ICT Olympiad questions
+- Helped run registration and scoring for college business case and quiz competitions
+- Placed 1st in BAF Shaheen College Dhaka and reached the ICTOBD National Semifinals (Rank 41)
+
+## Awards, Certifications & Skills (https://kazishakib.com/awards)
+
+### Honors & Awards
+- Best Internship Award (BDT 5,000 Prize) (Hanif Enterprise, 2026): Given for building the bilingual Hanif Challan Autofiller (saving 3+ hours a day across 1,000+ payment challans) and automating weekly CSV-to-Excel reports.
+- National Semifinalist (Rank 41 Nationwide) (ICT Olympiad Bangladesh (ICTOBD), 2025): Finished 1st at BAF Shaheen College Dhaka and placed 41st nationwide in the semifinal round out of 1,500+ participants.
+- FIDE Online Arena Rating 1700+ (Bangladesh Rank #16) (World Chess / FIDE Online Arena, 2025): Reached a 1700+ FIDE Online Arena rating and ranked #16 in Bangladesh on World Chess.
+- The Duke of Edinburgh's International Award (Bronze) (The Duke of Edinburgh's International Award Foundation, 2025): Completed the community volunteering, skill building, physical activity, and outdoor expedition sections of the program.
+- Principal's Recognition for Club Contributions (BAF Shaheen College Dhaka Business Club, 2025): Given by the College Principal for my work as Director of IT, building the club's 11-page website, and setting up automatic event certificates.
+
+### Certifications
+- Diploma in Digital Marketing and Graphics Design (SR Dream IT, 2025 – 2026): Project-Based Diploma · Best Project Award
+- Duolingo English Test (DET) · Score 135 / 160 (Duolingo English Test, 2025): CEFR C1 English Score
+- SAT · Score 1420 / 1600 (College Board (SAT), 2025): 770 Math · 650 Evidence-Based Reading & Writing
+- The Duke of Edinburgh's International Bronze Standard (The Duke of Edinburgh's International Award Foundation, 2025): International Youth Service & Leadership Certificate
+
+### Skills
+- Python (Programming)
+- HTML (Web Markup)
+- C++ (Programming)
+- Finance & Valuation (Business & Analytics)
+- Leadership (Management & Club)
+- Microsoft Excel (Financial Modeling)
+- Digital Marketing (Media & Strategy)
+- Languages (Bengali & English) (Communication)
+
+## Contact & Profiles
+
+- Website: https://kazishakib.com/
+- Email: thekazishakib@gmail.com
+- LinkedIn: https://bd.linkedin.com/in/kazishakib
+- World Chess: https://worldchess.com/profile/1087107
+- GitHub: https://github.com/thekazishakib
+- Medium: https://medium.com/@kazishakib
+- Facebook: https://www.facebook.com/thekazishakib
+- Instagram: https://www.instagram.com/thekazishakib

@@ -1,0 +1,768 @@
+backend:
+  name: github
+  repo: TODO-OWNER/TODO-REPO
+  branch: main
+  auth_methods:
+    - token
+
+publish_mode: simple
+media_folder: public/uploads
+public_folder: /uploads
+
+output:
+  omit_empty_optional_fields: false
+
+collections:
+  - name: content
+    label: Portfolio Content
+    description: Structured content files for all portfolio pages and navigation. SEO page titles and meta descriptions stay managed in code.
+    files:
+      - name: hero
+        label: "1. Home — Hero"
+        file: src/content/hero.json
+        format: json
+        fields:
+          - { name: leftPill, label: Top-Left Header Pill, widget: string, hint: "Short role/status pill shown at the top-left of the hero card" }
+          - { name: handwrittenIntro, label: Handwritten Intro, widget: string, hint: "Script greeting displayed above the main name" }
+          - { name: rightPill, label: Top-Right Location Pill, widget: string }
+          - { name: mainName, label: Main Display Name, widget: string }
+          - { name: leftStickyNote, label: Left Sticky Note, widget: string }
+          - { name: centerStatusBadge, label: Center Status Badge, widget: string }
+          - { name: rightStickyNote, label: Right Sticky Note, widget: string }
+          - { name: headlineLine1, label: Headline Line 1, widget: string }
+          - { name: headlineLine2, label: Headline Line 2, widget: string }
+          - { name: primaryCtaLabel, label: Primary Button Label (Portfolio), widget: string }
+          - { name: secondaryCtaLabel, label: Secondary Button Label (Resume), widget: string, hint: "Automatically hidden on the site if Resume URL in Site Settings is empty" }
+
+      - name: currentStatus
+        label: "2. Home — Current Status"
+        file: src/content/currentStatus.json
+        format: json
+        fields:
+          - { name: eyebrow, label: Section Eyebrow, widget: string }
+          - { name: title, label: Section Title, widget: string }
+          - { name: subtitle, label: Section Subtitle, widget: text }
+          - { name: bulletsHeading, label: Bullets Group Heading, widget: string }
+          - { name: updatedBadgeText, label: Top-Right Status Badge, widget: string }
+          - name: sectionOrder
+            label: Home section order
+            widget: list
+            label_singular: Section
+            summary: "{{fields.section}}"
+            allow_add: false
+            allow_remove: false
+            allow_duplicate: false
+            allow_reorder: true
+            min: 7
+            max: 7
+            collapsed: true
+            hint: "Drag and drop these 7 sections to change how featured items are grouped on the Home page. Adding or removing sections is locked."
+            field:
+              name: section
+              label: Section Name
+              widget: string
+              readonly: true
+          - name: items
+            label: Custom Current Status Items
+            widget: list
+            label_singular: Status Item
+            summary: "{{fields.role}} — {{fields.organization}}"
+            add_to_top: true
+            collapsed: true
+            hint: "Standalone Home status entries (combined with items marked Show on Home in Academics, Projects, Publications, Experience, and Awards)."
+            fields:
+              - { name: index, label: Display Index, widget: string, hint: "Short 2-digit index shown on the card (e.g. 01, 04)" }
+              - name: section
+                label: Home Section Group
+                widget: select
+                options: [Education, Work, Volunteering, Research, Awards, Projects, Custom]
+                default: Custom
+              - { name: ongoing, label: "Ongoing (Present)", widget: boolean, required: false, default: true, hint: "Mark ON for current ongoing activities" }
+              - { name: showOnHome, label: Show on Home, widget: boolean, required: false, default: true, hint: "Show this item in Home Current Status" }
+              - { name: categoryLabel, label: Category Eyebrow, widget: string }
+              - { name: timeframe, label: Timeframe, widget: string }
+              - { name: role, label: Role / Title, widget: string }
+              - { name: organization, label: Organization, widget: string }
+              - { name: logoUrl, label: Logo Image, widget: image, required: false, hint: "WebP or JPG under 300 KB" }
+              - { name: logoAlt, label: Logo Alt Text, widget: string, required: false }
+              - { name: location, label: Location, widget: string }
+              - { name: summary, label: Summary, widget: text }
+              - name: keyDeliverables
+                label: Key Deliverables (Bullets)
+                widget: list
+                label_singular: Bullet
+                summary: "{{fields.bullet}}"
+                add_to_top: true
+                min: 1
+                max: 4
+                hint: "Write 3-4 bullets"
+                field: { name: bullet, label: Bullet, widget: string }
+              - { name: proofSummary, label: Bottom Proof / Metric Line, widget: string }
+              - { name: link, label: Destination Link, widget: string, required: false, pattern: ['^(?:$|/(?!/).*|https://.+|mailto:.+)$', 'Must start with / (internal path), https://, or mailto:, or leave empty'], hint: "Internal path (/academics) or full URL (https://...). Leave empty to hide button." }
+              - { name: linkLabel, label: Button Label, widget: string, required: false }
+          - { name: cvBannerEyebrow, label: Bottom CTA Eyebrow, widget: string }
+          - { name: cvBannerTitle, label: Bottom CTA Title, widget: string }
+          - { name: cvBannerDescription, label: Bottom CTA Description, widget: text }
+          - { name: cvPrimaryLabel, label: Primary Resume Button Label, widget: string, hint: "Hidden when Resume URL in Site Settings is empty" }
+          - { name: cvSecondaryLabel, label: Secondary CTA Button Label, widget: string }
+          - { name: cvSecondaryLink, label: Secondary CTA Link, widget: string, required: false, pattern: ['^(?:$|/(?!/).*|https://.+|mailto:.+)$', 'Must start with / (internal path), https://, or mailto:, or leave empty'], hint: "Internal path (/about) or full URL (https://...). Leave empty to hide button." }
+
+      - name: about
+        label: "3. About Page"
+        file: src/content/about.json
+        format: json
+        fields:
+          - { name: eyebrow, label: Page Eyebrow, widget: string }
+          - { name: title, label: Page Title, widget: string }
+          - { name: subtitle, label: Page Subtitle, widget: text }
+          - { name: profileImageUrl, label: Profile Portrait Image, widget: image, required: false, hint: "WebP or JPG under 300 KB" }
+          - { name: fullName, label: Full Name, widget: string }
+          - { name: roleHeadline, label: Role Headline, widget: string }
+          - { name: location, label: Location Label, widget: string }
+          - name: bioParagraphs
+            label: Biography Paragraphs
+            widget: list
+            label_singular: Paragraph
+            summary: "{{fields.paragraph}}"
+            add_to_top: true
+            min: 1
+            field: { name: paragraph, label: Paragraph, widget: text }
+          - name: highlights
+            label: Highlight Badges
+            widget: list
+            label_singular: Highlight
+            summary: "{{fields.title}} — {{fields.subtitle}}"
+            add_to_top: true
+            min: 1
+            collapsed: true
+            fields:
+              - { name: title, label: Title, widget: string }
+              - { name: subtitle, label: Subtitle, widget: string }
+              - name: iconName
+                label: Icon
+                widget: select
+                options: [Award, Medal, Trophy, Star, Crown, GraduationCap, TrendingUp, Briefcase, Mail, Linkedin, Github, BookOpen, Globe, Facebook, Instagram, Code, FileText, ShieldCheck, ExternalLink]
+          - { name: contactEyebrow, label: Contact Box Eyebrow, widget: string }
+          - { name: contactTitle, label: Contact Box Title, widget: string }
+          - name: contactChannels
+            label: Contact Channels
+            widget: list
+            label_singular: Contact Channel
+            summary: "{{fields.name}} — {{fields.subtitle}}"
+            add_to_top: true
+            min: 1
+            collapsed: true
+            fields:
+              - { name: name, label: Channel Name, widget: string }
+              - { name: subtitle, label: Handle / Address Text, widget: string }
+              - { name: href, label: Link URL, widget: string, type: url, required: false, pattern: ['^(?:$|(?:https://|mailto:).+)$', 'Must start with https:// or mailto:, or leave empty'], hint: "External https:// or mailto: URL. Leave empty to hide link." }
+              - name: iconName
+                label: Icon
+                widget: select
+                options: [Award, Medal, Trophy, Star, Crown, GraduationCap, TrendingUp, Briefcase, Mail, Linkedin, Github, BookOpen, Globe, Facebook, Instagram, Code, FileText, ShieldCheck, ExternalLink]
+              - { name: external, label: Open in New Tab, widget: boolean, required: false, default: true }
+          - { name: languagesEyebrow, label: Languages Box Eyebrow, widget: string }
+          - { name: languagesContent, label: Languages Spoken, widget: string }
+
+      - name: academics
+        label: "4. Academics Page"
+        file: src/content/academics.json
+        format: json
+        fields:
+          - { name: eyebrow, label: Page Eyebrow, widget: string }
+          - { name: title, label: Page Title, widget: string }
+          - { name: subtitle, label: Page Subtitle, widget: text }
+          - name: benchmarkCards
+            label: Benchmark Cards (Scores & Focus)
+            widget: list
+            label_singular: Benchmark Card
+            summary: "{{fields.label}} ({{fields.value}})"
+            add_to_top: true
+            min: 1
+            collapsed: true
+            fields:
+              - { name: label, label: Card Label, widget: string }
+              - { name: value, label: Metric Value, widget: string }
+              - { name: note, label: Supporting Note, widget: string }
+              - { name: logoUrl, label: Logo Image, widget: image, required: false, hint: "WebP or JPG under 300 KB" }
+              - { name: logoAlt, label: Logo Alt Text, widget: string, required: false }
+          - { name: historyEyebrow, label: History Section Eyebrow, widget: string }
+          - { name: historyTitle, label: History Section Title, widget: string }
+          - { name: historyRange, label: Right Date Range Note, widget: string }
+          - name: educationHistory
+            label: Education History
+            widget: list
+            label_singular: Education Entry
+            summary: "{{fields.institution}} — {{fields.degree}}"
+            add_to_top: true
+            min: 1
+            collapsed: true
+            fields:
+              - { name: institution, label: Institution Name, widget: string }
+              - { name: location, label: Location, widget: string }
+              - { name: year, label: Timeframe / Years, widget: string }
+              - { name: degree, label: Degree / Program, widget: string }
+              - { name: details, label: Coursework / Focus Details, widget: text, required: false }
+              - { name: result, label: Outcome / Result Badge, widget: string }
+              - { name: logoUrl, label: Logo Image, widget: image, required: false, hint: "WebP or JPG under 300 KB" }
+              - { name: logoAlt, label: Logo Alt Text, widget: string, required: false }
+              - { name: ongoing, label: "Ongoing (Present)", widget: boolean, required: false, default: false, hint: "Mark ON if still enrolled or ongoing" }
+              - { name: showOnHome, label: Show on Home, widget: boolean, required: false, default: false, hint: "Include this education entry in Home Current Status" }
+              - { name: homeEyebrow, label: Home Eyebrow Override, widget: string, required: false, hint: "Optional Home-only eyebrow. Empty fields fall back to this item's own text." }
+              - { name: homeTitle, label: Home Title Override, widget: string, required: false, hint: "Optional Home-only title. Empty fields fall back to this item's own text." }
+              - { name: homeOrganization, label: Home Organization Override, widget: string, required: false, hint: "Optional Home-only organization. Empty fields fall back to this item's own text." }
+              - { name: homePeriod, label: Home Period Override, widget: string, required: false, hint: "Optional Home-only timeframe. Empty fields fall back to this item's own text." }
+              - { name: homeLocation, label: Home Location Override, widget: string, required: false, hint: "Optional Home-only location. Empty fields fall back to this item's own text." }
+              - { name: homeSummary, label: Home Summary Override, widget: text, required: false, hint: "Optional Home-only summary. Empty fields fall back to this item's own text." }
+              - name: homeBullets
+                label: Home Bullets Override
+                widget: list
+                label_singular: Home Bullet
+                summary: "{{fields.bullet}}"
+                add_to_top: true
+                max: 4
+                required: false
+                hint: "Write 3-4 bullets. Empty fields fall back to this item's own text."
+                field: { name: bullet, label: Bullet, widget: string }
+              - { name: homeBadge, label: Home Bottom Metric / Badge Override, widget: string, required: false, hint: "Optional Home-only bottom badge. Empty fields fall back to this item's own text." }
+              - { name: homeLink, label: Home Link Override, widget: string, required: false, pattern: ['^(?:$|/(?!/).*|https://.+|mailto:.+)$', 'Must start with / (internal path), https://, or mailto:, or leave empty'], hint: "Optional Home-only link (/academics, https://...). Empty fields fall back to the section route." }
+              - { name: homeLinkLabel, label: Home Link Label Override, widget: string, required: false, hint: "Optional Home-only CTA label. Empty fields fall back to the default button text." }
+
+      - name: projects
+        label: "5. Projects Page"
+        file: src/content/projects.json
+        format: json
+        fields:
+          - { name: eyebrow, label: Page Eyebrow, widget: string }
+          - { name: title, label: Page Title, widget: string }
+          - { name: subtitle, label: Page Subtitle, widget: text }
+          - name: summaryStats
+            label: Summary Stat Cards
+            widget: list
+            label_singular: Stat Card
+            summary: "{{fields.label}} ({{fields.value}})"
+            add_to_top: true
+            min: 1
+            collapsed: true
+            fields:
+              - { name: label, label: Label, widget: string }
+              - { name: value, label: Metric Value, widget: string }
+              - { name: note, label: Supporting Note, widget: string }
+          - { name: footerMaxProjects, label: Max Projects Listed in Footer, widget: number, value_type: int, min: 1, step: 1 }
+          - name: projects
+            label: Projects
+            widget: list
+            label_singular: Project
+            summary: "{{fields.title}} ({{fields.year}})"
+            add_to_top: true
+            min: 1
+            collapsed: true
+            fields:
+              - { name: id, label: Slug / ID, widget: string }
+              - { name: title, label: Project Title, widget: string }
+              - { name: footerShortName, label: Short Footer Name, widget: string, required: false, hint: "Optional shorter name shown in the footer column" }
+              - { name: category, label: Category, widget: string }
+              - { name: year, label: Year / Release, widget: string }
+              - name: tech
+                label: Tech Stack Tags
+                widget: list
+                label_singular: Technology
+                summary: "{{fields.item}}"
+                add_to_top: true
+                min: 1
+                field: { name: item, label: Technology, widget: string }
+              - { name: summary, label: Project Summary, widget: text }
+              - name: highlights
+                label: Key Highlights (Bullets)
+                widget: list
+                label_singular: Bullet
+                summary: "{{fields.bullet}}"
+                add_to_top: true
+                min: 1
+                max: 4
+                hint: "Write 3-4 bullets"
+                field: { name: bullet, label: Bullet, widget: string }
+              - { name: impact, label: Impact / Bottom Metric Line, widget: string }
+              - { name: logoUrl, label: Logo / Thumbnail Image, widget: image, required: false, hint: "WebP or JPG under 300 KB" }
+              - { name: logoAlt, label: Logo Alt Text, widget: string, required: false }
+              - { name: githubUrl, label: Source / GitHub URL, widget: string, type: url, required: false, pattern: ['^(?:$|https://.+)$', 'Must start with https:// or leave empty'], hint: "External https:// URL. Leave empty to hide Source button." }
+              - { name: liveUrl, label: Live Demo URL, widget: string, type: url, required: false, pattern: ['^(?:$|https://.+)$', 'Must start with https:// or leave empty'], hint: "External https:// URL. Leave empty to hide Live button." }
+              - { name: sourceLabel, label: Source Button Label, widget: string, required: false }
+              - { name: liveLabel, label: Live Button Label, widget: string, required: false }
+              - { name: ongoing, label: "Ongoing (Present)", widget: boolean, required: false, default: false, hint: "Mark ON for active ongoing projects" }
+              - { name: showOnHome, label: Show on Home, widget: boolean, required: false, default: false, hint: "Include this project in Home Current Status" }
+              - { name: homeEyebrow, label: Home Eyebrow Override, widget: string, required: false, hint: "Optional Home-only eyebrow. Empty fields fall back to this item's own text." }
+              - { name: homeTitle, label: Home Title Override, widget: string, required: false, hint: "Optional Home-only title. Empty fields fall back to this item's own text." }
+              - { name: homeOrganization, label: Home Organization Override, widget: string, required: false, hint: "Optional Home-only subtitle/organization. Empty fields fall back to this item's own text." }
+              - { name: homePeriod, label: Home Period Override, widget: string, required: false, hint: "Optional Home-only timeframe. Empty fields fall back to this item's own text." }
+              - { name: homeLocation, label: Home Location Override, widget: string, required: false, hint: "Optional Home-only location/impact note. Empty fields fall back to this item's own text." }
+              - { name: homeSummary, label: Home Summary Override, widget: text, required: false, hint: "Optional Home-only summary. Empty fields fall back to this item's own text." }
+              - name: homeBullets
+                label: Home Bullets Override
+                widget: list
+                label_singular: Home Bullet
+                summary: "{{fields.bullet}}"
+                add_to_top: true
+                max: 4
+                required: false
+                hint: "Write 3-4 bullets. Empty fields fall back to this item's own bullets."
+                field: { name: bullet, label: Bullet, widget: string }
+              - { name: homeBadge, label: Home Bottom Metric / Badge Override, widget: string, required: false, hint: "Optional Home-only bottom badge. Empty fields fall back to this item's own text." }
+              - { name: homeLink, label: Home Link Override, widget: string, required: false, pattern: ['^(?:$|/(?!/).*|https://.+|mailto:.+)$', 'Must start with / (internal path), https://, or mailto:, or leave empty'], hint: "Optional Home-only link (/projects, https://...). Empty fields fall back to the item link or section route." }
+              - { name: homeLinkLabel, label: Home Link Label Override, widget: string, required: false, hint: "Optional Home-only button label. Empty fields fall back to this item's own text." }
+
+      - name: publications
+        label: "6. Publications Page"
+        file: src/content/publications.json
+        format: json
+        fields:
+          - { name: eyebrow, label: Page Eyebrow, widget: string }
+          - { name: title, label: Page Title, widget: string }
+          - { name: subtitle, label: Page Subtitle, widget: text }
+          - name: summaryStats
+            label: Summary Stat Cards
+            widget: list
+            label_singular: Stat Card
+            summary: "{{fields.label}} ({{fields.value}})"
+            add_to_top: true
+            min: 1
+            collapsed: true
+            fields:
+              - { name: label, label: Label, widget: string }
+              - { name: value, label: Metric Value, widget: string }
+              - { name: note, label: Supporting Note, widget: string }
+          - { name: footerMaxArticles, label: Max Publications Listed in Footer, widget: number, value_type: int, min: 1, step: 1 }
+          - name: publications
+            label: Publications
+            widget: list
+            label_singular: Publication
+            summary: "{{fields.title}} ({{fields.date}})"
+            add_to_top: true
+            min: 1
+            collapsed: true
+            fields:
+              - { name: id, label: Slug / ID, widget: string }
+              - { name: type, label: Publication Type, widget: string }
+              - { name: title, label: Article / Publication Title, widget: string }
+              - { name: publisher, label: Publisher / Platform, widget: string }
+              - { name: date, label: Publish Date, widget: string }
+              - { name: status, label: Status Badge, widget: string }
+              - { name: logoUrl, label: Publisher Logo Image, widget: image, required: false, hint: "WebP or JPG under 300 KB" }
+              - { name: logoAlt, label: Logo Alt Text, widget: string, required: false }
+              - { name: abstract, label: Abstract / Summary, widget: text }
+              - name: highlights
+                label: Key Highlights (Bullets)
+                widget: list
+                label_singular: Bullet
+                summary: "{{fields.bullet}}"
+                add_to_top: true
+                min: 1
+                max: 4
+                hint: "Write 3-4 bullets"
+                field: { name: bullet, label: Bullet, widget: string }
+              - name: tags
+                label: Topic Tags
+                widget: list
+                label_singular: Tag
+                summary: "{{fields.tag}}"
+                add_to_top: true
+                min: 1
+                field: { name: tag, label: Tag, widget: string }
+              - { name: link, label: External Article URL, widget: string, type: url, required: false, pattern: ['^(?:$|(?:https://|mailto:).+)$', 'Must start with https:// or mailto:, or leave empty'], hint: "External https:// URL. Leave empty to hide link button." }
+              - { name: linkLabel, label: Link Button Label, widget: string, required: false }
+              - { name: footerTag, label: Short Footer Subtitle Tag, widget: string, required: false }
+              - { name: ongoing, label: "Ongoing (Present)", widget: boolean, required: false, default: false, hint: "Mark ON for ongoing research or series" }
+              - { name: showOnHome, label: Show on Home, widget: boolean, required: false, default: false, hint: "Include this publication in Home Current Status" }
+              - { name: homeEyebrow, label: Home Eyebrow Override, widget: string, required: false, hint: "Optional Home-only eyebrow. Empty fields fall back to this item's own text." }
+              - { name: homeTitle, label: Home Title Override, widget: string, required: false, hint: "Optional Home-only title. Empty fields fall back to this item's own text." }
+              - { name: homeOrganization, label: Home Organization Override, widget: string, required: false, hint: "Optional Home-only publisher. Empty fields fall back to this item's own text." }
+              - { name: homePeriod, label: Home Period Override, widget: string, required: false, hint: "Optional Home-only date. Empty fields fall back to this item's own text." }
+              - { name: homeLocation, label: Home Location Override, widget: string, required: false, hint: "Optional Home-only location. Empty fields fall back to this item's own text." }
+              - { name: homeSummary, label: Home Summary Override, widget: text, required: false, hint: "Optional Home-only summary. Empty fields fall back to this item's own text." }
+              - name: homeBullets
+                label: Home Bullets Override
+                widget: list
+                label_singular: Home Bullet
+                summary: "{{fields.bullet}}"
+                add_to_top: true
+                max: 4
+                required: false
+                hint: "Write 3-4 bullets. Empty fields fall back to this item's own bullets."
+                field: { name: bullet, label: Bullet, widget: string }
+              - { name: homeBadge, label: Home Bottom Metric / Badge Override, widget: string, required: false, hint: "Optional Home-only bottom badge. Empty fields fall back to this item's own text." }
+              - { name: homeLink, label: Home Link Override, widget: string, required: false, pattern: ['^(?:$|/(?!/).*|https://.+|mailto:.+)$', 'Must start with / (internal path), https://, or mailto:, or leave empty'], hint: "Optional Home-only link (/publication, https://...). Empty fields fall back to the item link or section route." }
+              - { name: homeLinkLabel, label: Home Link Label Override, widget: string, required: false, hint: "Optional Home-only CTA label. Empty fields fall back to this item's own text." }
+          - name: footerExtraLinks
+            label: Extra Publication Links in Footer
+            widget: list
+            label_singular: Footer Publication Link
+            summary: "{{fields.title}} — {{fields.tag}}"
+            add_to_top: true
+            required: false
+            collapsed: true
+            fields:
+              - { name: title, label: Title, widget: string }
+              - { name: tag, label: Subtitle Tag, widget: string }
+              - { name: href, label: URL, widget: string, type: url, required: false, pattern: ['^(?:$|(?:https://|mailto:).+)$', 'Must start with https:// or mailto:, or leave empty'] }
+              - { name: external, label: Open in New Tab, widget: boolean, required: false, default: true }
+
+      - name: experience
+        label: "7. Experience & Leadership Page"
+        file: src/content/experience.json
+        format: json
+        fields:
+          - { name: eyebrow, label: Page Eyebrow, widget: string }
+          - { name: title, label: Page Title, widget: string }
+          - { name: subtitle, label: Page Subtitle, widget: text }
+          - name: summaryStats
+            label: Summary Stat Cards
+            widget: list
+            label_singular: Stat Card
+            summary: "{{fields.label}} ({{fields.value}})"
+            add_to_top: true
+            min: 1
+            collapsed: true
+            fields:
+              - { name: label, label: Label, widget: string }
+              - { name: value, label: Metric Value, widget: string }
+              - { name: note, label: Supporting Note, widget: string }
+          - { name: workSectionEyebrow, label: Work Section Eyebrow, widget: string }
+          - { name: workSectionTitle, label: Work Section Title, widget: string }
+          - { name: workSectionRightNote, label: Work Section Right Note, widget: string }
+          - name: workExperiences
+            label: Work Experience
+            widget: list
+            label_singular: Work Role
+            summary: "{{fields.role}} at {{fields.company}}"
+            add_to_top: true
+            min: 1
+            collapsed: true
+            fields:
+              - { name: company, label: Company / Organization, widget: string }
+              - { name: role, label: Job Title / Role, widget: string }
+              - { name: period, label: Period, widget: string }
+              - { name: location, label: Location, widget: string }
+              - { name: status, label: Status Pill, widget: string }
+              - { name: logoUrl, label: Company Logo Image, widget: image, required: false, hint: "WebP or JPG under 300 KB" }
+              - { name: logoAlt, label: Logo Alt Text, widget: string, required: false }
+              - { name: summary, label: Role Summary, widget: text }
+              - name: highlights
+                label: Key Highlights (Bullets)
+                widget: list
+                label_singular: Bullet
+                summary: "{{fields.bullet}}"
+                add_to_top: true
+                min: 1
+                max: 4
+                hint: "Write 3-4 bullets"
+                field: { name: bullet, label: Bullet, widget: string }
+              - name: stats
+                label: Impact Metric Cards
+                widget: list
+                label_singular: Metric
+                summary: "{{fields.label}}: {{fields.value}}"
+                add_to_top: true
+                min: 1
+                collapsed: true
+                fields:
+                  - { name: label, label: Metric Label, widget: string }
+                  - { name: value, label: Metric Value, widget: string }
+              - { name: ongoing, label: "Ongoing (Present)", widget: boolean, required: false, default: false, hint: "Mark ON for active ongoing roles" }
+              - { name: showOnHome, label: Show on Home, widget: boolean, required: false, default: false, hint: "Feature this work experience inside Home Current Status" }
+              - { name: homeEyebrow, label: Home Eyebrow Override, widget: string, required: false, hint: "Optional Home-only eyebrow. Empty fields fall back to this item's own text." }
+              - { name: homeTitle, label: Home Title Override, widget: string, required: false, hint: "Optional Home-only title. Empty fields fall back to this item's own text." }
+              - { name: homeOrganization, label: Home Organization Override, widget: string, required: false, hint: "Optional Home-only organization. Empty fields fall back to this item's own text." }
+              - { name: homePeriod, label: Home Period Override, widget: string, required: false, hint: "Optional Home-only timeframe. Empty fields fall back to this item's own text." }
+              - { name: homeLocation, label: Home Location Override, widget: string, required: false, hint: "Optional Home-only location. Empty fields fall back to this item's own text." }
+              - { name: homeSummary, label: Home Summary Override, widget: text, required: false, hint: "Optional Home-only summary. Empty fields fall back to this item's own text." }
+              - name: homeBullets
+                label: Home Bullets Override
+                widget: list
+                label_singular: Home Bullet
+                summary: "{{fields.bullet}}"
+                add_to_top: true
+                max: 4
+                required: false
+                hint: "Write 3-4 bullets. Empty fields fall back to this item's own bullets."
+                field: { name: bullet, label: Bullet, widget: string }
+              - { name: homeBadge, label: Home Bottom Metric / Badge Override, widget: string, required: false, hint: "Optional Home-only bottom badge. Empty fields fall back to this item's own text." }
+              - { name: homeLink, label: Home Link Override, widget: string, required: false, pattern: ['^(?:$|/(?!/).*|https://.+|mailto:.+)$', 'Must start with / (internal path), https://, or mailto:, or leave empty'], hint: "Optional Home-only link (/experience, https://...). Empty fields fall back to the section route." }
+              - { name: homeLinkLabel, label: Home Link Label Override, widget: string, required: false, hint: "Optional Home-only button label. Empty fields fall back to this item's own text." }
+          - { name: leadershipSectionEyebrow, label: Leadership Section Eyebrow, widget: string }
+          - { name: leadershipSectionTitle, label: Leadership Section Title, widget: string }
+          - { name: leadershipSectionRightNote, label: Leadership Section Right Note, widget: string }
+          - name: leadershipAndVolunteering
+            label: Leadership & Volunteering
+            widget: list
+            label_singular: Leadership Role
+            summary: "{{fields.role}} — {{fields.organization}}"
+            add_to_top: true
+            min: 1
+            collapsed: true
+            fields:
+              - { name: role, label: Role / Position, widget: string }
+              - { name: organization, label: Organization / Club, widget: string }
+              - { name: period, label: Period, widget: string }
+              - { name: type, label: Activity Category, widget: string }
+              - { name: logoUrl, label: Organization Logo Image, widget: image, required: false, hint: "WebP or JPG under 300 KB" }
+              - { name: logoAlt, label: Logo Alt Text, widget: string, required: false }
+              - { name: summary, label: Role Summary, widget: text }
+              - name: highlights
+                label: Key Highlights (Bullets)
+                widget: list
+                label_singular: Bullet
+                summary: "{{fields.bullet}}"
+                add_to_top: true
+                min: 1
+                max: 4
+                hint: "Write 3-4 bullets"
+                field: { name: bullet, label: Bullet, widget: string }
+              - { name: badge, label: Recognition / Badge, widget: string }
+              - { name: link, label: External / Internal Link, widget: string, required: false, pattern: ['^(?:$|/(?!/).*|https://.+|mailto:.+)$', 'Must start with / (internal path), https://, or mailto:, or leave empty'], hint: "Internal path (/experience) or external URL (https://...). Leave empty to hide button." }
+              - { name: linkLabel, label: Button Label, widget: string, required: false }
+              - { name: ongoing, label: "Ongoing (Present)", widget: boolean, required: false, default: false, hint: "Mark ON for active ongoing leadership" }
+              - { name: showOnHome, label: Show on Home, widget: boolean, required: false, default: false, hint: "Feature this leadership role inside Home Current Status" }
+              - { name: homeEyebrow, label: Home Eyebrow Override, widget: string, required: false, hint: "Optional Home-only eyebrow. Empty fields fall back to this item's own text." }
+              - { name: homeTitle, label: Home Title Override, widget: string, required: false, hint: "Optional Home-only title. Empty fields fall back to this item's own text." }
+              - { name: homeOrganization, label: Home Organization Override, widget: string, required: false, hint: "Optional Home-only organization. Empty fields fall back to this item's own text." }
+              - { name: homePeriod, label: Home Period Override, widget: string, required: false, hint: "Optional Home-only timeframe. Empty fields fall back to this item's own text." }
+              - { name: homeLocation, label: Home Location Override, widget: string, required: false, hint: "Optional Home-only location. Empty fields fall back to this item's own text." }
+              - { name: homeSummary, label: Home Summary Override, widget: text, required: false, hint: "Optional Home-only summary. Empty fields fall back to this item's own text." }
+              - name: homeBullets
+                label: Home Bullets Override
+                widget: list
+                label_singular: Home Bullet
+                summary: "{{fields.bullet}}"
+                add_to_top: true
+                max: 4
+                required: false
+                hint: "Write 3-4 bullets. Empty fields fall back to this item's own bullets."
+                field: { name: bullet, label: Bullet, widget: string }
+              - { name: homeBadge, label: Home Bottom Metric / Badge Override, widget: string, required: false, hint: "Optional Home-only bottom badge. Empty fields fall back to this item's own text." }
+              - { name: homeLink, label: Home Link Override, widget: string, required: false, pattern: ['^(?:$|/(?!/).*|https://.+|mailto:.+)$', 'Must start with / (internal path), https://, or mailto:, or leave empty'], hint: "Optional Home-only link (/experience, https://...). Empty fields fall back to the item link or section route." }
+              - { name: homeLinkLabel, label: Home Link Label Override, widget: string, required: false, hint: "Optional Home-only button label. Empty fields fall back to this item's own text." }
+
+      - name: awards
+        label: "8. Awards, Certifications & Skills"
+        file: src/content/awards.json
+        format: json
+        fields:
+          - { name: eyebrow, label: Page Eyebrow, widget: string }
+          - { name: title, label: Page Title, widget: string }
+          - { name: subtitle, label: Page Subtitle, widget: text }
+          - { name: awardsEyebrow, label: Awards Section Eyebrow, widget: string }
+          - { name: awardsTitle, label: Awards Section Title, widget: string }
+          - { name: awardsRightNote, label: Awards Section Right Note, widget: string }
+          - name: awards
+            label: Awards & Honors
+            widget: list
+            label_singular: Award
+            summary: "{{fields.title}} ({{fields.year}})"
+            add_to_top: true
+            min: 1
+            collapsed: true
+            fields:
+              - { name: title, label: Award Title, widget: string }
+              - { name: organization, label: Issuing Organization, widget: string }
+              - { name: year, label: Year, widget: string }
+              - { name: highlight, label: Highlight Badge, widget: string }
+              - { name: description, label: Description, widget: text }
+              - { name: logoUrl, label: Award / Org Logo Image, widget: image, required: false, hint: "WebP or JPG under 300 KB" }
+              - { name: logoAlt, label: Logo Alt Text, widget: string, required: false }
+              - { name: link, label: Destination Link, widget: string, required: false, pattern: ['^(?:$|/(?!/).*|https://.+|mailto:.+)$', 'Must start with / (internal path), https://, or mailto:, or leave empty'], hint: "Internal path (/awards) or full URL (https://...). Leave empty to hide button." }
+              - { name: linkLabel, label: Button Label, widget: string, required: false }
+              - { name: ongoing, label: "Ongoing (Present)", widget: boolean, required: false, default: false, hint: "Mark ON for ongoing rankings or active honors" }
+              - { name: showOnHome, label: Show on Home, widget: boolean, required: false, default: false, hint: "Include this award in Home Current Status" }
+              - { name: homeEyebrow, label: Home Eyebrow Override, widget: string, required: false, hint: "Optional Home-only eyebrow. Empty fields fall back to this item's own text." }
+              - { name: homeTitle, label: Home Title Override, widget: string, required: false, hint: "Optional Home-only title. Empty fields fall back to this item's own text." }
+              - { name: homeOrganization, label: Home Organization Override, widget: string, required: false, hint: "Optional Home-only organization. Empty fields fall back to this item's own text." }
+              - { name: homePeriod, label: Home Period Override, widget: string, required: false, hint: "Optional Home-only year/period. Empty fields fall back to this item's own text." }
+              - { name: homeLocation, label: Home Location Override, widget: string, required: false, hint: "Optional Home-only location. Empty fields fall back to this item's own text." }
+              - { name: homeSummary, label: Home Summary Override, widget: text, required: false, hint: "Optional Home-only summary. Empty fields fall back to this item's own text." }
+              - name: homeBullets
+                label: Home Bullets Override
+                widget: list
+                label_singular: Home Bullet
+                summary: "{{fields.bullet}}"
+                add_to_top: true
+                max: 4
+                required: false
+                hint: "Write 3-4 bullets. Empty fields fall back to this item's own text."
+                field: { name: bullet, label: Bullet, widget: string }
+              - { name: homeBadge, label: Home Bottom Metric / Badge Override, widget: string, required: false, hint: "Optional Home-only bottom badge. Empty fields fall back to this item's own text." }
+              - { name: homeLink, label: Home Link Override, widget: string, required: false, pattern: ['^(?:$|/(?!/).*|https://.+|mailto:.+)$', 'Must start with / (internal path), https://, or mailto:, or leave empty'], hint: "Optional Home-only link (/awards, https://...). Empty fields fall back to the item link or section route." }
+              - { name: homeLinkLabel, label: Home Link Label Override, widget: string, required: false, hint: "Optional Home-only CTA label. Empty fields fall back to this item's own text." }
+          - { name: certificationsEyebrow, label: Certifications Section Eyebrow, widget: string }
+          - { name: certificationsTitle, label: Certifications Section Title, widget: string }
+          - { name: certificationsRightNote, label: Certifications Section Right Note, widget: string }
+          - name: certifications
+            label: Certifications
+            widget: list
+            label_singular: Certification
+            summary: "{{fields.title}} — {{fields.issuer}}"
+            add_to_top: true
+            min: 1
+            collapsed: true
+            fields:
+              - { name: title, label: Certification Title, widget: string }
+              - { name: issuer, label: Issuing Body, widget: string }
+              - { name: date, label: Issue Date / Year, widget: string }
+              - { name: credentialNote, label: Credential / Score Note, widget: string }
+              - { name: logoUrl, label: Certificate / Issuer Logo Image, widget: image, required: false, hint: "WebP or JPG under 300 KB" }
+              - { name: logoAlt, label: Logo Alt Text, widget: string, required: false }
+              - { name: link, label: "Credential Link (or # placeholder)", widget: string, required: false, pattern: ['^(?:$|#|/(?!/).*|https://.+|mailto:.+)$', 'Must start with /, https://, mailto:, equal #, or leave empty'], hint: "Accepts https:// URL, /path, #, or leave empty to hide button" }
+              - { name: linkLabel, label: Button Label, widget: string, required: false }
+          - { name: skillsEyebrow, label: Skills Section Eyebrow, widget: string }
+          - { name: skillsTitle, label: Skills Section Title, widget: string }
+          - { name: skillsRightNote, label: Skills Section Right Note, widget: string }
+          - name: directSkills
+            label: Skills
+            widget: list
+            label_singular: Skill
+            summary: "{{fields.name}} ({{fields.category}})"
+            add_to_top: true
+            min: 1
+            collapsed: true
+            fields:
+              - { name: name, label: Skill Name, widget: string }
+              - { name: category, label: Skill Category, widget: string }
+              - { name: logoUrl, label: Skill Icon / Logo Image, widget: image, required: false, hint: "WebP or JPG under 300 KB" }
+              - { name: logoAlt, label: Logo Alt Text, widget: string, required: false }
+
+      - name: legal
+        label: "9. Terms & Privacy Page"
+        file: src/content/legal.json
+        format: json
+        fields:
+          - { name: effectiveDate, label: Effective Date Pill, widget: string }
+          - { name: pageTitle, label: Page Title, widget: string }
+          - { name: pageSubtitle, label: Page Subtitle, widget: text }
+          - { name: lastUpdatedNote, label: Last Updated Box Note, widget: string }
+          - { name: intellectualPropertyTitle, label: Section 1 Title (Intellectual Property), widget: string }
+          - name: intellectualPropertyText
+            label: Section 1 Paragraphs
+            widget: list
+            label_singular: Paragraph
+            summary: "{{fields.text}}"
+            add_to_top: true
+            min: 1
+            fields:
+              - { name: text, label: Paragraph Text, widget: text }
+          - { name: thirdPartyLogosTitle, label: Section 2 Title (Third-Party Logos), widget: string }
+          - name: thirdPartyLogosText
+            label: Section 2 Paragraphs
+            widget: list
+            label_singular: Paragraph
+            summary: "{{fields.text}}"
+            add_to_top: true
+            min: 1
+            fields:
+              - { name: text, label: Paragraph Text, widget: text }
+          - { name: externalLinksTitle, label: Section 3 Title (External Links), widget: string }
+          - name: externalLinksText
+            label: Section 3 Paragraphs
+            widget: list
+            label_singular: Paragraph
+            summary: "{{fields.text}}"
+            add_to_top: true
+            min: 1
+            fields:
+              - { name: text, label: Paragraph Text, widget: text }
+          - { name: privacyPolicyTitle, label: Section 4 Title (Privacy Policy), widget: string }
+          - name: privacyPolicyText
+            label: Section 4 Paragraphs
+            widget: list
+            label_singular: Paragraph
+            summary: "{{fields.text}}"
+            add_to_top: true
+            min: 1
+            fields:
+              - { name: text, label: Paragraph Text, widget: text }
+          - { name: contactEmail, label: Contact Email Address, widget: string, type: email, pattern: ['^[^\s@]+@[^\s@]+\.[^\s@]+$', 'Enter a valid email address'] }
+          - { name: ctaTitle, label: Bottom CTA Title, widget: string }
+          - { name: ctaDescription, label: Bottom CTA Description, widget: text }
+          - { name: ctaButtonLabel, label: Bottom CTA Button Label, widget: string }
+
+      - name: site
+        label: "10. Site Header, Footer & 404"
+        file: src/content/site.json
+        format: json
+        fields:
+          - { name: lastUpdatedLabel, label: Last Updated Prefix Label, widget: string }
+          - { name: lastUpdatedDate, label: Last Updated Date Text, widget: string }
+          - { name: resumeUrl, label: Resume / CV URL, widget: string, type: url, required: false, pattern: ['^(?:$|https://.+)$', 'Must start with https:// or leave empty'], hint: "Any https:// link to your CV. Leave empty to automatically hide all Resume / CV buttons in Header, Hero, Current Status, and Footer." }
+          - name: header
+            label: Header Navigation
+            widget: object
+            fields:
+              - { name: brandName, label: Brand Display Name, widget: string }
+              - { name: brandTitle, label: Brand Logo Tooltip, widget: string }
+              - { name: resumeTitle, label: Resume Pill Tooltip, widget: string }
+              - { name: resumeAriaLabel, label: Resume Button Aria Label, widget: string }
+              - name: navLabels
+                label: Top Navigation Labels
+                widget: object
+                fields:
+                  - { name: home, label: Home Link Label, widget: string }
+                  - { name: about, label: About Link Label, widget: string }
+                  - { name: academics, label: Academics Link Label, widget: string }
+                  - { name: projects, label: Projects Link Label, widget: string }
+                  - { name: publication, label: Publication Link Label, widget: string }
+                  - { name: experience, label: Experience Link Label, widget: string }
+                  - { name: awards, label: Awards Link Label, widget: string }
+          - name: socialLinks
+            label: Social Profile Links
+            widget: list
+            label_singular: Social Link
+            summary: "{{fields.name}}"
+            add_to_top: true
+            min: 1
+            collapsed: true
+            fields:
+              - { name: name, label: Platform Name, widget: string }
+              - { name: url, label: Profile URL, widget: string, type: url, required: false, pattern: ['^(?:$|(?:https://|mailto:).+)$', 'Must start with https:// or mailto:, or leave empty'], hint: "External https:// or mailto: URL. Leave empty to hide icon." }
+              - name: icon
+                label: Icon
+                widget: select
+                options: [Award, Medal, Trophy, Star, Crown, GraduationCap, TrendingUp, Briefcase, Mail, Linkedin, Github, BookOpen, Globe, Facebook, Instagram, Code, FileText, ShieldCheck, ExternalLink]
+              - { name: showInHeader, label: Show in Header, widget: boolean, required: false, default: false }
+              - { name: showInFooter, label: Show in Footer, widget: boolean, required: false, default: false }
+          - name: footer
+            label: Footer Settings
+            widget: object
+            fields:
+              - { name: brandName, label: Footer Brand Display Name, widget: string }
+              - { name: primaryDescription, label: Primary Intro Copy, widget: text }
+              - { name: secondaryDescription, label: Secondary Bio Copy, widget: text }
+              - { name: location, label: Location Text, widget: string }
+              - { name: navColumnTitle, label: Navigation Column Title, widget: string }
+              - { name: resumeLinkLabel, label: Resume Column Link Label, widget: string }
+              - { name: projectsColumnTitle, label: Projects Column Title, widget: string }
+              - { name: publicationColumnTitle, label: Publication Column Title, widget: string }
+              - { name: contactColumnTitle, label: Contact Column Title, widget: string }
+              - name: contactLinks
+                label: Footer Contact Links
+                widget: list
+                label_singular: Contact Link
+                summary: "{{fields.label}}"
+                add_to_top: true
+                min: 1
+                collapsed: true
+                fields:
+                  - { name: label, label: Display Label, widget: string }
+                  - { name: href, label: Link URL, widget: string, type: url, required: false, pattern: ['^(?:$|(?:https://|mailto:).+)$', 'Must start with https:// or mailto:, or leave empty'] }
+                  - name: iconName
+                    label: Icon
+                    widget: select
+                    options: [Award, Medal, Trophy, Star, Crown, GraduationCap, TrendingUp, Briefcase, Mail, Linkedin, Github, BookOpen, Globe, Facebook, Instagram, Code, FileText, ShieldCheck, ExternalLink]
+                  - { name: external, label: Open in New Tab, widget: boolean, required: false, default: true }
+              - { name: copyrightName, label: Copyright Holder Name, widget: string }
+              - { name: bottomTagline, label: Bottom Tagline, widget: string }
+          - name: notFound
+            label: 404 Not Found Page
+            widget: object
+            fields:
+              - { name: eyebrow, label: Eyebrow Label, widget: string }
+              - { name: title, label: Heading Title, widget: string }
+              - { name: description, label: Body Description, widget: text }
+              - { name: backLabel, label: Return Home Button Label, widget: string }

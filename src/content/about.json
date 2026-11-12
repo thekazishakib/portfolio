@@ -1,0 +1,105 @@
+{
+  "eyebrow": "01 · PROFILE & BIOGRAPHY",
+  "title": "About Me",
+  "subtitle": "Background, focus areas, and direct contact information.",
+  "profileImageUrl": "/uploads/kazi-shakib-profile.jpg",
+  "fullName": "Kazi Shakib",
+  "roleHeadline": "Finance Instructor · Software Builder · Chess Player",
+  "location": "Mirpur, Dhaka-1216, Bangladesh",
+  "bioParagraphs": [
+    "I live in Mirpur, Dhaka, where I teach finance, build software tools, and play competitive chess. As a Finance Instructor at Mentors Brother, I teach corporate finance, valuation methods (IRR, Payback Period, EBITDA), and Time Value of Money (TVM) to 100+ students, helping at-risk students achieve a 100% pass rate.",
+    "Before that, I worked as a Finance Intern at Hanif Enterprise. I prepared more than 1,000 electronic payment challans and built the open-source Hanif Challan Autofiller using Python, Excel, and HTML. It cut over 3 hours of manual typing a day and won the Best Internship Award (BDT 5,000 prize).",
+    "At the BAF Shaheen College Dhaka Business Club, where I was Director of IT and now help out as Alumni IT Advisor, I built the club's 11-page website with React, TypeScript, Firebase, and Vercel. I also set up Google Apps Script and AutoCrat to send out event certificates automatically."
+  ],
+  "highlights": [
+    {
+      "title": "FIDE Arena 1700+",
+      "subtitle": "Bangladesh Rank #16 · World Chess",
+      "iconName": "Trophy"
+    },
+    {
+      "title": "Best Internship Award",
+      "subtitle": "Hanif Enterprise (BDT 5,000 Prize)",
+      "iconName": "Award"
+    },
+    {
+      "title": "SAT 1420 · DET 135",
+      "subtitle": "BAF Shaheen College Dhaka Alumni",
+      "iconName": "GraduationCap"
+    },
+    {
+      "title": "ICTOBD Rank 41",
+      "subtitle": "National Semifinalist & 1st in College",
+      "iconName": "TrendingUp"
+    }
+  ],
+  "contactEyebrow": "DIRECT CHANNELS",
+  "contactTitle": "Contact Me",
+  "contactChannels": [
+    {
+      "name": "Email",
+      "subtitle": "thekazishakib@gmail.com",
+      "href": "mailto:thekazishakib@gmail.com",
+      "iconName": "Mail",
+      "external": false
+    },
+    {
+      "name": "LinkedIn",
+      "subtitle": "bd.linkedin.com/in/kazishakib",
+      "href": "https://bd.linkedin.com/in/kazishakib",
+      "iconName": "Linkedin",
+      "external": true
+    },
+    {
+      "name": "GitHub",
+      "subtitle": "github.com/thekazishakib",
+      "href": "https://github.com/thekazishakib",
+      "iconName": "Github",
+      "external": true
+    },
+    {
+      "name": "Medium",
+      "subtitle": "medium.com/@kazishakib",
+      "href": "https://medium.com/@kazishakib",
+      "iconName": "BookOpen",
+      "external": true
+    },
+    {
+      "name": "ICT Olympiad Bangladesh",
+      "subtitle": "Campus Ambassador · ICTOBD Profile",
+      "href": "https://www.ictolympiadbangladesh.com/team/ambassadors?event=3&loginId=thekazishakib%40gmail.com&division=&team=",
+      "iconName": "Award",
+      "external": true
+    },
+    {
+      "name": "INSPIRE YOUTH JOURNAL",
+      "subtitle": "Published Researcher · Bangladesh Chapter",
+      "href": "https://inspireyouthjournal.org/bangladesh/",
+      "iconName": "Globe",
+      "external": true
+    },
+    {
+      "name": "Chess Profile",
+      "subtitle": "FIDE Arena 1700+ (BD #16) · World Chess",
+      "href": "https://worldchess.com/profile/1087107",
+      "iconName": "Trophy",
+      "external": true
+    },
+    {
+      "name": "Facebook",
+      "subtitle": "@thekazishakib",
+      "href": "https://www.facebook.com/thekazishakib",
+      "iconName": "Facebook",
+      "external": true
+    },
+    {
+      "name": "Instagram",
+      "subtitle": "@thekazishakib",
+      "href": "https://www.instagram.com/thekazishakib",
+      "iconName": "Instagram",
+      "external": true
+    }
+  ],
+  "languagesEyebrow": "LANGUAGES",
+  "languagesContent": "Bengali (Native) · English (SAT 1420, DET 135)"
+}

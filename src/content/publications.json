@@ -1,0 +1,155 @@
+{
+  "eyebrow": "04 · PUBLICATION",
+  "title": "Publication",
+  "subtitle": "Articles I've written on inflation, purchasing power, gold in retirement, and financial literacy.",
+  "summaryStats": [
+    {
+      "label": "Selected Works",
+      "value": "03 Articles",
+      "note": "Analytical & economic writing"
+    },
+    {
+      "label": "Publication Platform",
+      "value": "BAFSDBC",
+      "note": "Business insights and blog"
+    },
+    {
+      "label": "Core Focus",
+      "value": "Inflation & Finance",
+      "note": "Macroeconomics, gold & literacy"
+    },
+    {
+      "label": "Sources Studied",
+      "value": "21+ Sources",
+      "note": "13 economic reports, 5 papers & standards"
+    }
+  ],
+  "footerMaxArticles": 4,
+  "publications": [
+    {
+      "id": "100-taka-note",
+      "type": "Published Article",
+      "title": "Why The 100 Taka Note Keeps Shrinking",
+      "publisher": "BAF Shaheen College Dhaka Business Club (BAFSDBC)",
+      "date": "November 9, 2026",
+      "status": "Published Article",
+      "logoUrl": "/uploads/article-bafsd-medium.jpg",
+      "logoAlt": "BAF Shaheen College Dhaka Business Club Logo",
+      "abstract": "An article looking at why 100 Taka buys so much less today than a few years ago. It examines inflation trends, the Taka's exchange rate against the US dollar, rising import costs, and how middle-class households cope with rising prices, drawing on data from 13 economic and news sources.",
+      "highlights": [
+        "Examines inflation easing to 8.26% while wage growth lagged at 8.05%, keeping pressure on everyday budgets",
+        "Draws on BBS figures, CPD reports, World Bank estimates, and USD-BDT exchange rates from 2021 to 2026",
+        "Discusses poverty line thresholds, flat wages, and middle-class purchasing power in Bangladesh"
+      ],
+      "tags": [
+        "Inflation & Purchasing Power",
+        "BDT Currency",
+        "13 Sources Cited",
+        "BAFSDBC"
+      ],
+      "link": "https://bafsdbc.vercel.app/blogs/why-the-100-taka-note-keeps-shrinking",
+      "linkLabel": "Read on BAFSDBC",
+      "footerTag": "BAFSDBC · Nov '26",
+      "ongoing": false,
+      "showOnHome": false,
+      "homeSummary": "",
+      "homeEyebrow": "",
+      "homeTitle": "",
+      "homeOrganization": "",
+      "homePeriod": "",
+      "homeLocation": "",
+      "homeBullets": [],
+      "homeBadge": "",
+      "homeLink": "",
+      "homeLinkLabel": ""
+    },
+    {
+      "id": "gold-safest-investment",
+      "type": "Published Article",
+      "title": "Is gold really the safest investment in old age?",
+      "publisher": "BAF Shaheen College Dhaka Business Club (BAFSDBC)",
+      "date": "December 9, 2025",
+      "status": "Selected Publication (Top Pick from ~100 Submissions)",
+      "logoUrl": "/uploads/article-bafsd-medium.jpg",
+      "logoAlt": "BAF Shaheen College Dhaka Business Club Logo",
+      "abstract": "Chosen by faculty advisors from about 100 student submissions for the BAF Shaheen College Dhaka Business Club (BAFSDBC). I used 3 academic papers (Baur & Lucey 2010; Baur & McDermott 2010; Erb & Harvey 2013) and 2 investor guides (FINRA; U.S. SEC Investor.gov) to look at whether holding only physical gold is actually safe in retirement.",
+      "highlights": [
+        "Reviews how gold behaves in market crashes (Baur & Lucey 2010; Baur & McDermott 2010) and over long periods of inflation (Erb & Harvey 2013, NBER Working Paper 18706)",
+        "Points out the practical problems for retirees: gold pays no monthly income, can be hard to sell quickly in a medical emergency, and comes with dealer, storage, and making charges (FINRA)",
+        "Argues for splitting retirement savings between emergency cash, income-paying bonds or deposits, and a smaller share of gold (U.S. SEC Investor.gov)"
+      ],
+      "tags": [
+        "Retirement Investing",
+        "Asset Allocation",
+        "5 Sources Cited",
+        "BAFSDBC"
+      ],
+      "link": "https://bafsdbc.vercel.app/blogs/is-gold-really-the-safest-investment-in-old-age",
+      "linkLabel": "Read on BAFSDBC",
+      "footerTag": "BAFSDBC · Dec '25",
+      "ongoing": false,
+      "showOnHome": false,
+      "homeSummary": "",
+      "homeEyebrow": "",
+      "homeTitle": "",
+      "homeOrganization": "",
+      "homePeriod": "",
+      "homeLocation": "",
+      "homeBullets": [],
+      "homeBadge": "",
+      "homeLink": "",
+      "homeLinkLabel": ""
+    },
+    {
+      "id": "what-the-numbers-dont-tell-us-about-money",
+      "type": "Published Article",
+      "title": "What the Numbers Don't Tell Us About Money",
+      "publisher": "BAF Shaheen College Dhaka Business Club (BAFSDBC)",
+      "date": "June 29, 2025",
+      "status": "Published Article",
+      "logoUrl": "/uploads/article-bafsd-medium.jpg",
+      "logoAlt": "BAF Shaheen College Dhaka Business Club Logo",
+      "abstract": "An article on why understanding the concepts behind financial figures matters in everyday life and small business decisions. It breaks down budgeting, net worth versus liquidity, real versus nominal returns, compound interest, gross margins, and customer lifetime value.",
+      "highlights": [
+        "Explains why an 8 percent pay rise can leave someone worse off when prices and expenses outpace income",
+        "Covers net worth versus liquidity and why emergency cash reserves matter even for asset-rich households",
+        "Draws on reference frameworks from the OECD, the IMF, and the IFRS Foundation (IAS 7)"
+      ],
+      "tags": [
+        "Financial Literacy",
+        "Personal Finance",
+        "Business Math",
+        "BAFSDBC"
+      ],
+      "link": "https://bafsdbc.vercel.app/blogs/what-the-numbers-dont-tell-us-about-money",
+      "linkLabel": "Read on BAFSDBC",
+      "footerTag": "BAFSDBC · Jun '25",
+      "ongoing": false,
+      "showOnHome": false,
+      "homeSummary": "",
+      "homeEyebrow": "",
+      "homeTitle": "",
+      "homeOrganization": "",
+      "homePeriod": "",
+      "homeLocation": "",
+      "homeBullets": [],
+      "homeBadge": "",
+      "homeLink": "",
+      "homeLinkLabel": ""
+    }
+  ],
+  "footerExtraLinks": [
+    {
+      "title": "BAFSDBC Business Blogs",
+      "tag": "Club Blog Portal",
+      "href": "https://bafsdbc.vercel.app/blogs",
+      "external": true
+    },
+    {
+      "title": "Medium (@kazishakib)",
+      "tag": "All Essays",
+      "href": "https://medium.com/@kazishakib",
+      "external": true
+    }
+  ]
+}

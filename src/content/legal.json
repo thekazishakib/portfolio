@@ -1,0 +1,55 @@
+{
+  "effectiveDate": "Spring 2026",
+  "pageTitle": "Terms & Privacy",
+  "pageSubtitle": "Information about using this portfolio, its content, and your privacy.",
+  "lastUpdatedNote": "Terms of Use & Privacy",
+  "intellectualPropertyTitle": "1. Copyright & Original Work",
+  "intellectualPropertyText": [
+    {
+      "text": "I wrote the articles, project descriptions, and code on this site, including the Hanif Challan Autofiller and the BAFSD Business Club website. Open-source projects follow the license in their GitHub repository."
+    },
+    {
+      "text": "Please don't copy, scrape, repost, or use any of it commercially without my written permission."
+    },
+    {
+      "text": "If someone copies my work or passes it off as their own, I may take legal action."
+    }
+  ],
+  "thirdPartyLogosTitle": "2. Third-Party Logos & Trademarks",
+  "thirdPartyLogosText": [
+    {
+      "text": "This website displays logos, seals, and emblems of schools, exams, competitions, and companies. These include The College Board (SAT 1420), Duolingo English Test (DET 135), BAF Shaheen College Dhaka, Daffodil International University, Hanif Enterprise, Mentors Brother, FIDE / World Chess, ICT Olympiad Bangladesh, Inspire Youth Journal, and The Duke of Edinburgh's International Award."
+    },
+    {
+      "text": "All third-party trademarks, service marks, badges, and logos belong to their respective owners. They are shown here under nominative fair use only to identify my education, test scores, work history, and extracurricular activities."
+    },
+    {
+      "text": "Showing these logos does not mean those organizations endorse, sponsor, or are affiliated with me, and I claim no ownership or commercial rights over any third-party intellectual property."
+    }
+  ],
+  "externalLinksTitle": "3. External Links & Off-Site Resources",
+  "externalLinksText": [
+    {
+      "text": "This portfolio links to external platforms, social networks, code repositories, and publications, including LinkedIn, GitHub, World Chess, Inspire Youth Journal, ICT Olympiad Bangladesh, Medium, Facebook, and Instagram."
+    },
+    {
+      "text": "These links are provided for convenience and reference. I do not control or endorse the content, uptime, security, or terms of third-party websites, and I am not liable for external communications, data handling, or off-site transactions."
+    }
+  ],
+  "privacyPolicyTitle": "4. Visitor Privacy Policy",
+  "privacyPolicyText": [
+    {
+      "text": "This website is a personal portfolio and does not collect, monetize, or sell visitors' personal information. It uses no third-party advertising trackers or behavioral cookies."
+    },
+    {
+      "text": "When you contact me by email (thekazishakib@gmail.com) or through linked social profiles, any information you share (such as your name, email address, or message) is kept confidential and used only to reply to academic, career, teaching, or collaboration inquiries."
+    },
+    {
+      "text": "Browser storage (localStorage) is used only to remember your light/dark theme preference. No tracking or telemetry data is sent to marketing brokers."
+    }
+  ],
+  "contactEmail": "thekazishakib@gmail.com",
+  "ctaTitle": "Questions or permission requests?",
+  "ctaDescription": "Get in touch about using my work, attribution, or privacy.",
+  "ctaButtonLabel": "Email Kazi Shakib"
+}

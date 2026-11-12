@@ -1,0 +1,223 @@
+{
+  "eyebrow": "06 · AWARDS, CERTIFICATES & SKILLS",
+  "title": "Awards & Skills",
+  "subtitle": "Awards, certificates, and skills from my work and studies.",
+  "awardsEyebrow": "AWARDS",
+  "awardsTitle": "Honors & Awards",
+  "awardsRightNote": "5 Awards (2025 – 2026)",
+  "awards": [
+    {
+      "title": "Best Internship Award (BDT 5,000 Prize)",
+      "organization": "Hanif Enterprise",
+      "year": "2026",
+      "highlight": "Internship Award",
+      "description": "Given for building the bilingual Hanif Challan Autofiller (saving 3+ hours a day across 1,000+ payment challans) and automating weekly CSV-to-Excel reports.",
+      "logoUrl": "/uploads/award-hanif-enterprise.png",
+      "logoAlt": "Hanif Enterprise Best Internship Award Logo",
+      "link": "",
+      "linkLabel": "",
+      "ongoing": false,
+      "showOnHome": false,
+      "homeSummary": "",
+      "homeEyebrow": "",
+      "homeTitle": "",
+      "homeOrganization": "",
+      "homePeriod": "",
+      "homeLocation": "",
+      "homeBullets": [],
+      "homeBadge": "",
+      "homeLink": "",
+      "homeLinkLabel": ""
+    },
+    {
+      "title": "National Semifinalist (Rank 41 Nationwide)",
+      "organization": "ICT Olympiad Bangladesh (ICTOBD)",
+      "year": "2025",
+      "highlight": "1st in College (1,500+ Participants)",
+      "description": "Finished 1st at BAF Shaheen College Dhaka and placed 41st nationwide in the semifinal round out of 1,500+ participants.",
+      "logoUrl": "/uploads/award-ictobd.jpg",
+      "logoAlt": "ICT Olympiad Bangladesh Logo",
+      "link": "https://www.ictolympiadbangladesh.com/team/ambassadors?event=3&loginId=thekazishakib%40gmail.com&division=&team=",
+      "linkLabel": "ICTOBD Profile",
+      "ongoing": false,
+      "showOnHome": false,
+      "homeSummary": "",
+      "homeEyebrow": "",
+      "homeTitle": "",
+      "homeOrganization": "",
+      "homePeriod": "",
+      "homeLocation": "",
+      "homeBullets": [],
+      "homeBadge": "",
+      "homeLink": "",
+      "homeLinkLabel": ""
+    },
+    {
+      "title": "FIDE Online Arena Rating 1700+ (Bangladesh Rank #16)",
+      "organization": "World Chess / FIDE Online Arena",
+      "year": "2025",
+      "highlight": "Bangladesh Rank #16",
+      "description": "Reached a 1700+ FIDE Online Arena rating and ranked #16 in Bangladesh on World Chess.",
+      "logoUrl": "/uploads/award-fide-chess.png",
+      "logoAlt": "World Chess FIDE Online Arena Logo",
+      "link": "https://worldchess.com/profile/1087107",
+      "linkLabel": "World Chess Profile",
+      "ongoing": false,
+      "showOnHome": false,
+      "homeSummary": "",
+      "homeEyebrow": "",
+      "homeTitle": "",
+      "homeOrganization": "",
+      "homePeriod": "",
+      "homeLocation": "",
+      "homeBullets": [],
+      "homeBadge": "",
+      "homeLink": "",
+      "homeLinkLabel": ""
+    },
+    {
+      "title": "The Duke of Edinburgh's International Award (Bronze)",
+      "organization": "The Duke of Edinburgh's International Award Foundation",
+      "year": "2025",
+      "highlight": "International Youth Honor",
+      "description": "Completed the community volunteering, skill building, physical activity, and outdoor expedition sections of the program.",
+      "logoUrl": "/uploads/award-duke-of-edinburgh.jpg",
+      "logoAlt": "The Duke of Edinburgh's International Award Logo",
+      "link": "",
+      "linkLabel": "",
+      "ongoing": false,
+      "showOnHome": false,
+      "homeSummary": "",
+      "homeEyebrow": "",
+      "homeTitle": "",
+      "homeOrganization": "",
+      "homePeriod": "",
+      "homeLocation": "",
+      "homeBullets": [],
+      "homeBadge": "",
+      "homeLink": "",
+      "homeLinkLabel": ""
+    },
+    {
+      "title": "Principal's Recognition for Club Contributions",
+      "organization": "BAF Shaheen College Dhaka Business Club",
+      "year": "2025",
+      "highlight": "Executive Leadership",
+      "description": "Given by the College Principal for my work as Director of IT, building the club's 11-page website, and setting up automatic event certificates.",
+      "logoUrl": "/uploads/award-bafsd-club.jpg",
+      "logoAlt": "BAF Shaheen College Dhaka Business Club Logo",
+      "link": "https://bafsdbc.vercel.app",
+      "linkLabel": "Club Portal",
+      "ongoing": false,
+      "showOnHome": false,
+      "homeSummary": "",
+      "homeEyebrow": "",
+      "homeTitle": "",
+      "homeOrganization": "",
+      "homePeriod": "",
+      "homeLocation": "",
+      "homeBullets": [],
+      "homeBadge": "",
+      "homeLink": "",
+      "homeLinkLabel": ""
+    }
+  ],
+  "certificationsEyebrow": "CERTIFICATES & DIPLOMAS",
+  "certificationsTitle": "Certifications",
+  "certificationsRightNote": "Diplomas · Standardized Tests · International Standards",
+  "certifications": [
+    {
+      "title": "Diploma in Digital Marketing and Graphics Design",
+      "issuer": "SR Dream IT",
+      "date": "2025 – 2026",
+      "credentialNote": "Project-Based Diploma · Best Project Award",
+      "logoUrl": "/uploads/cert-sr-dream-it.jpg",
+      "logoAlt": "SR Dream IT Certification Logo",
+      "link": "#",
+      "linkLabel": "Certificate"
+    },
+    {
+      "title": "Duolingo English Test (DET) · Score 135 / 160",
+      "issuer": "Duolingo English Test",
+      "date": "2025",
+      "credentialNote": "CEFR C1 English Score",
+      "logoUrl": "/uploads/cert-det.png",
+      "logoAlt": "Duolingo English Test Certification Logo",
+      "link": "#",
+      "linkLabel": "Certificate"
+    },
+    {
+      "title": "SAT · Score 1420 / 1600",
+      "issuer": "College Board (SAT)",
+      "date": "2025",
+      "credentialNote": "770 Math · 650 Evidence-Based Reading & Writing",
+      "logoUrl": "/uploads/cert-sat.jpg",
+      "logoAlt": "SAT College Board Certification Logo",
+      "link": "#",
+      "linkLabel": "Certificate"
+    },
+    {
+      "title": "The Duke of Edinburgh's International Bronze Standard",
+      "issuer": "The Duke of Edinburgh's International Award Foundation",
+      "date": "2025",
+      "credentialNote": "International Youth Service & Leadership Certificate",
+      "logoUrl": "/uploads/cert-duke-of-edinburgh.jpg",
+      "logoAlt": "Duke of Edinburgh Bronze Certification Logo",
+      "link": "#",
+      "linkLabel": "Certificate"
+    }
+  ],
+  "skillsEyebrow": "SKILLS",
+  "skillsTitle": "Skills",
+  "skillsRightNote": "Python · HTML · C++ · Finance · Leadership · Languages",
+  "directSkills": [
+    {
+      "name": "Python",
+      "category": "Programming",
+      "logoUrl": "/uploads/skill-python.png",
+      "logoAlt": "Python Logo"
+    },
+    {
+      "name": "HTML",
+      "category": "Web Markup",
+      "logoUrl": "/uploads/skill-html.png",
+      "logoAlt": "HTML Logo"
+    },
+    {
+      "name": "C++",
+      "category": "Programming",
+      "logoUrl": "/uploads/skill-cpp.jpg",
+      "logoAlt": "C++ Logo"
+    },
+    {
+      "name": "Finance & Valuation",
+      "category": "Business & Analytics",
+      "logoUrl": "/uploads/skill-finance.svg",
+      "logoAlt": "Finance Logo"
+    },
+    {
+      "name": "Leadership",
+      "category": "Management & Club",
+      "logoUrl": "/uploads/skill-leadership.jpg",
+      "logoAlt": "Leadership Logo"
+    },
+    {
+      "name": "Microsoft Excel",
+      "category": "Financial Modeling",
+      "logoUrl": "/uploads/skill-excel.jpg",
+      "logoAlt": "Microsoft Excel Logo"
+    },
+    {
+      "name": "Digital Marketing",
+      "category": "Media & Strategy",
+      "logoUrl": "/uploads/skill-marketing.png",
+      "logoAlt": "Digital Marketing Logo"
+    },
+    {
+      "name": "Languages (Bengali & English)",
+      "category": "Communication",
+      "logoUrl": "/uploads/skill-languages.svg",
+      "logoAlt": "Languages Logo"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+# Kazi Shakib
+
+> Finance Instructor · Software Builder · Chess Player (Mirpur, Dhaka-1216, Bangladesh). I live in Mirpur, Dhaka, where I teach finance, build software tools, and play competitive chess. As a Finance Instructor at Mentors Brother, I teach corporate finance, valuation methods (IRR, Payback Period, EBITDA), and Time Value of Money (TVM) to 100+ students, helping at-risk students achieve a 100% pass rate.
+
+## Public Pages
+
+- [Home](https://kazishakib.com/): Current roles, teaching, club advisory, and writing overview.
+- [About Me](https://kazishakib.com/about): Biography, highlights, languages, and direct contact channels.
+- [Academic Portfolio](https://kazishakib.com/academics): SAT 1420, Duolingo English Test 135, SR Dream IT diploma, and school history.
+- [Selected Projects](https://kazishakib.com/projects): Open-source Python tools, web platforms, and data analysis projects.
+- [Publication](https://kazishakib.com/publication): Articles on inflation, purchasing power, gold, and retirement savings.
+- [Experience & Leadership](https://kazishakib.com/experience): Work experience at Mentors Brother and Hanif Enterprise, plus club leadership and volunteering.
+- [Awards & Skills](https://kazishakib.com/awards): Honors, certifications, and technical/finance skills.
+- [Terms & Privacy](https://kazishakib.com/terms-and-privacy): Copyright notice, third-party trademark notice, and visitor privacy policy.
+
+## Contact & Profiles
+
+- Email: thekazishakib@gmail.com
+- LinkedIn: https://bd.linkedin.com/in/kazishakib
+- World Chess: https://worldchess.com/profile/1087107
+- GitHub: https://github.com/thekazishakib
+- Medium: https://medium.com/@kazishakib

@@ -1,0 +1,134 @@
+{
+  "lastUpdatedLabel": "Last Updated:",
+  "lastUpdatedDate": "8 November 2026",
+  "resumeUrl": "https://drive.google.com/",
+  "header": {
+    "brandName": "KAZI SHAKIB",
+    "brandTitle": "Kazi Shakib",
+    "resumeTitle": "Curriculum Vitae / Resume",
+    "resumeAriaLabel": "CV / Resume",
+    "navLabels": {
+      "home": "Home",
+      "about": "About",
+      "academics": "Academics",
+      "projects": "Projects",
+      "publication": "Publication",
+      "experience": "Experience",
+      "awards": "Awards & Skills"
+    }
+  },
+  "socialLinks": [
+    {
+      "name": "Email",
+      "url": "mailto:thekazishakib@gmail.com",
+      "icon": "Mail",
+      "showInHeader": false,
+      "showInFooter": true
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://bd.linkedin.com/in/kazishakib",
+      "icon": "Linkedin",
+      "showInHeader": true,
+      "showInFooter": true
+    },
+    {
+      "name": "World Chess",
+      "url": "https://worldchess.com/profile/1087107",
+      "icon": "Crown",
+      "showInHeader": true,
+      "showInFooter": false
+    },
+    {
+      "name": "GitHub",
+      "url": "https://github.com/thekazishakib",
+      "icon": "Github",
+      "showInHeader": true,
+      "showInFooter": true
+    },
+    {
+      "name": "Medium",
+      "url": "https://medium.com/@kazishakib",
+      "icon": "BookOpen",
+      "showInHeader": false,
+      "showInFooter": false
+    },
+    {
+      "name": "Facebook",
+      "url": "https://www.facebook.com/thekazishakib",
+      "icon": "Facebook",
+      "showInHeader": false,
+      "showInFooter": true
+    },
+    {
+      "name": "Instagram",
+      "url": "https://www.instagram.com/thekazishakib",
+      "icon": "Instagram",
+      "showInHeader": false,
+      "showInFooter": true
+    }
+  ],
+  "footer": {
+    "brandName": "KAZI SHAKIB",
+    "primaryDescription": "Studying for university admissions, teaching finance math, and building web and Python tools in Dhaka.",
+    "secondaryDescription": "Preparing for undergraduate study (SAT 1420 · DET 135), teaching finance math (TVM, IRR, NPV, EBITDA) to 100+ students at Mentors Brother, and writing Python and web apps.",
+    "location": "Mirpur, Dhaka-1216, Bangladesh",
+    "navColumnTitle": "Navigation",
+    "resumeLinkLabel": "Resume / CV",
+    "projectsColumnTitle": "Projects",
+    "publicationColumnTitle": "Publication",
+    "contactColumnTitle": "Contact",
+    "contactLinks": [
+      {
+        "label": "thekazishakib@gmail.com",
+        "href": "mailto:thekazishakib@gmail.com",
+        "iconName": "Mail",
+        "external": false
+      },
+      {
+        "label": "LinkedIn · in/kazishakib",
+        "href": "https://bd.linkedin.com/in/kazishakib",
+        "iconName": "Linkedin",
+        "external": true
+      },
+      {
+        "label": "GitHub · @thekazishakib",
+        "href": "https://github.com/thekazishakib",
+        "iconName": "Github",
+        "external": true
+      },
+      {
+        "label": "Medium · @kazishakib",
+        "href": "https://medium.com/@kazishakib",
+        "iconName": "BookOpen",
+        "external": true
+      },
+      {
+        "label": "World Chess · FIDE 1700+ (BD #16)",
+        "href": "https://worldchess.com/profile/1087107",
+        "iconName": "Trophy",
+        "external": true
+      },
+      {
+        "label": "ICT Olympiad BD · Ambassador",
+        "href": "https://www.ictolympiadbangladesh.com/team/ambassadors?event=3&loginId=thekazishakib%40gmail.com&division=&team=",
+        "iconName": "Award",
+        "external": true
+      },
+      {
+        "label": "Inspire Youth Journal BD",
+        "href": "https://inspireyouthjournal.org/bangladesh/",
+        "iconName": "Globe",
+        "external": true
+      }
+    ],
+    "copyrightName": "Kazi Shakib",
+    "bottomTagline": "Education · Finance · Automation · Chess · Dhaka, BD"
+  },
+  "notFound": {
+    "eyebrow": "404 · NOT FOUND",
+    "title": "Page Not Found",
+    "description": "The page you are looking for does not exist or has moved.",
+    "backLabel": "Back to Home"
+  }
+}

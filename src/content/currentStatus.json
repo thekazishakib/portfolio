@@ -1,0 +1,67 @@
+{
+  "eyebrow": "CURRENT WORK",
+  "title": "What I'm Doing Now",
+  "subtitle": "What I’m studying, teaching, building, and writing in Dhaka.",
+  "bulletsHeading": "Current work",
+  "updatedBadgeText": "Updated: 8 November 2026",
+  "sectionOrder": [
+    "Education",
+    "Work",
+    "Volunteering",
+    "Research",
+    "Awards",
+    "Projects",
+    "Custom"
+  ],
+  "items": [
+    {
+      "index": "01",
+      "categoryLabel": "Education & Test Scores",
+      "timeframe": "2026 – Present",
+      "role": "University Admission Preparation",
+      "organization": "Test Scores & Coursework",
+      "logoUrl": "/uploads/academic-study-emblem.svg",
+      "logoAlt": "University Admission Preparation Logo",
+      "location": "Dhaka, Bangladesh",
+      "summary": "Preparing for undergraduate admission in Finance & Technology while working on digital marketing and design projects.",
+      "keyDeliverables": [
+        "SAT Score: 1420 / 1600 (770 Math · 650 Reading & Writing)",
+        "Duolingo English Test (DET): 135 / 160 (CEFR C1 Proficient English)"
+      ],
+      "proofSummary": "SAT 1420 · DET 135 · Undergraduate Admission Prep",
+      "link": "/academics",
+      "linkLabel": "View Academics",
+      "section": "Education",
+      "ongoing": true,
+      "showOnHome": true
+    },
+    {
+      "index": "04",
+      "categoryLabel": "Economic Writing & Competitive Strategy",
+      "timeframe": "Ongoing",
+      "role": "Economic Writer & FIDE Arena Competitor",
+      "organization": "BAFSDBC Blogs · World Chess",
+      "logoUrl": "/uploads/fintech-fide-status.jpg",
+      "logoAlt": "BAFSD Business Club & World Chess Logo",
+      "location": "National & Online",
+      "summary": "Writing articles on inflation, purchasing power, and personal finance for the BAFSD Business Club while competing in the FIDE Online Arena at a 1700+ rating.",
+      "keyDeliverables": [
+        "Published 'Why The 100 Taka Note Keeps Shrinking' on inflation and purchasing power with BAFSDBC",
+        "Published 'What the Numbers Don't Tell Us About Money' on personal finance and literacy",
+        "FIDE Online Arena rating of 1700+, ranked #16 in Bangladesh on World Chess"
+      ],
+      "proofSummary": "3 Articles · 21+ Sources Studied · FIDE 1700+ (BD Rank #16)",
+      "link": "/publication",
+      "linkLabel": "View Publication",
+      "section": "Custom",
+      "ongoing": true,
+      "showOnHome": true
+    }
+  ],
+  "cvBannerEyebrow": "CURRICULUM VITAE",
+  "cvBannerTitle": "My education and work history",
+  "cvBannerDescription": "Read my full CV with details on Mentors Brother, Hanif Enterprise (Best Internship Award), BAFSD Business Club, my SAT 1420 and DET 135 scores, and my articles.",
+  "cvPrimaryLabel": "Full CV",
+  "cvSecondaryLabel": "View Experience",
+  "cvSecondaryLink": "/experience"
+}

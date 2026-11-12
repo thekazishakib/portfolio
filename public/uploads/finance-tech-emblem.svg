@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <!-- Clean White Background -->
+  <rect width="120" height="120" rx="16" fill="#FFFFFF" />
+
+  <defs>
+    <!-- Single 60-degree sector (1 Secondary Cyan Trace + 1 Primary Navy Trace) -->
+    <g id="circuit-arm">
+      <!-- Secondary Cyan-Blue Branch Trace -->
+      <path
+        d="M 57 31 L 52 27.5 L 52 18.5"
+        stroke="#119CE6"
+        stroke-width="4.2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <circle
+        cx="52"
+        cy="14"
+        r="3.8"
+        fill="#FFFFFF"
+        stroke="#119CE6"
+        stroke-width="3.2"
+      />
+
+      <!-- Primary Dark Navy Main Trace -->
+      <path
+        d="M 49 53 L 49 36.5 L 68 25.5 L 68 18.5"
+        stroke="#102D5B"
+        stroke-width="4.4"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <circle
+        cx="68"
+        cy="14"
+        r="4"
+        fill="#FFFFFF"
+        stroke="#102D5B"
+        stroke-width="3.3"
+      />
+    </g>
+  </defs>
+
+  <!-- 6-Fold Rotational Symmetry Circuit Symbol -->
+  <g>
+    <use href="#circuit-arm" transform="rotate(0 60 60)" />
+    <use href="#circuit-arm" transform="rotate(60 60 60)" />
+    <use href="#circuit-arm" transform="rotate(120 60 60)" />
+    <use href="#circuit-arm" transform="rotate(180 60 60)" />
+    <use href="#circuit-arm" transform="rotate(240 60 60)" />
+    <use href="#circuit-arm" transform="rotate(300 60 60)" />
+  </g>
+</svg>

@@ -1,0 +1,249 @@
+{
+  "eyebrow": "05 · WORK HISTORY, LEADERSHIP & VOLUNTEERING",
+  "title": "Experience & Leadership",
+  "subtitle": "My teaching, internship, school club, and volunteering work.",
+  "summaryStats": [
+    {
+      "label": "Students Guided",
+      "value": "100+ Students",
+      "note": "100% final exam pass rate"
+    },
+    {
+      "label": "Time Saved",
+      "value": "3+ Hrs / Day",
+      "note": "Cut from daily form entry"
+    },
+    {
+      "label": "Campus & Community",
+      "value": "1,500+ Peers",
+      "note": "Reached across club initiatives"
+    },
+    {
+      "label": "Award",
+      "value": "Best Intern",
+      "note": "Hanif Enterprise internship"
+    }
+  ],
+  "workSectionEyebrow": "CAREER TIMELINE",
+  "workSectionTitle": "Professional Experience",
+  "workSectionRightNote": "Finance & Operations",
+  "workExperiences": [
+    {
+      "company": "Mentors Brother",
+      "role": "Finance Instructor",
+      "period": "Aug 2026 – Present",
+      "location": "Dhaka, Bangladesh",
+      "status": "CURRENT ROLE",
+      "logoUrl": "/uploads/exp-mentors-brother.jpg",
+      "logoAlt": "Mentors Brother Logo",
+      "summary": "Teaching corporate finance, capital budgeting, and financial math to over 100 students to help them prepare for their exams.",
+      "highlights": [
+        "Taught financial math to 100+ students, helping at-risk students achieve a 100% pass rate (50%+ on the final exam).",
+        "Covered 8+ valuation methods (IRR, Payback Period, EBITDA) and 4 Time Value of Money annuity formulas (PVA, PVAU, FVA, FVAU)."
+      ],
+      "stats": [
+        {
+          "label": "Students Taught",
+          "value": "100+ Students"
+        },
+        {
+          "label": "Exam Pass Rate",
+          "value": "100%"
+        },
+        {
+          "label": "Valuation Metrics",
+          "value": "8+ Core (IRR, PBP, EBITDA)"
+        },
+        {
+          "label": "TVM Annuities",
+          "value": "4 Models (PVA, FVAU)"
+        }
+      ],
+      "ongoing": true,
+      "showOnHome": true,
+      "homeSummary": "Teaching corporate finance, capital budgeting, and valuation to 100+ commerce students through worked examples and practice problems.",
+      "homeEyebrow": "Teaching & Corporate Finance",
+      "homeTitle": "",
+      "homeOrganization": "",
+      "homePeriod": "",
+      "homeLocation": "Mirpur, Dhaka",
+      "homeBullets": [
+        "Teaching 8+ valuation methods, including IRR, NPV, Payback Period, and EBITDA",
+        "Working through Time Value of Money (TVM) and multi-period annuity problems",
+        "Helped at-risk students in my classes achieve a 100% final exam pass rate"
+      ],
+      "homeBadge": "100+ Students Taught · 100% Exam Pass Rate · 8+ Valuation Methods",
+      "homeLink": "",
+      "homeLinkLabel": ""
+    },
+    {
+      "company": "Hanif Enterprise",
+      "role": "Finance Intern",
+      "period": "Jan 2026 – June 2026",
+      "location": "Dhaka, Bangladesh",
+      "status": "PREVIOUS ROLE · BEST INTERNSHIP AWARD",
+      "logoUrl": "/uploads/exp-hanif-enterprise.png",
+      "logoAlt": "Hanif Enterprise Logo",
+      "summary": "Prepared daily electronic payment challans, built a tool to fill out forms faster, and put together weekly transaction reports.",
+      "highlights": [
+        "Prepared 1,000+ electronic payment challans and built the bilingual Hanif Challan Autofiller, cutting 5–6 minutes per form (3+ hours a day).",
+        "Turned weekly CSV transaction files into clean Excel reports, and won the Best Internship Award (BDT 5,000 prize)."
+      ],
+      "stats": [
+        {
+          "label": "E-Challans Prepared",
+          "value": "1,000+ Forms"
+        },
+        {
+          "label": "Time Saved",
+          "value": "5–6 Min / Form (3+ Hrs/Day)"
+        },
+        {
+          "label": "Weekly Reports",
+          "value": "CSV to Excel"
+        },
+        {
+          "label": "Distinction",
+          "value": "Best Intern (BDT 5,000)"
+        }
+      ],
+      "ongoing": false,
+      "showOnHome": false,
+      "homeSummary": "",
+      "homeEyebrow": "",
+      "homeTitle": "",
+      "homeOrganization": "",
+      "homePeriod": "",
+      "homeLocation": "",
+      "homeBullets": [],
+      "homeBadge": "",
+      "homeLink": "",
+      "homeLinkLabel": ""
+    }
+  ],
+  "leadershipSectionEyebrow": "CLUBS & VOLUNTEERING",
+  "leadershipSectionTitle": "Volunteering & Leadership",
+  "leadershipSectionRightNote": "Clubs · Social Media · Volunteering",
+  "leadershipAndVolunteering": [
+    {
+      "role": "Alumni IT Advisor & Former Director of IT",
+      "organization": "BAF Shaheen College Dhaka Business Club (BAFSD Business Club)",
+      "period": "2024 – Present (Advisor since Oct 2025)",
+      "type": "Club Leadership & Technical Volunteering",
+      "logoUrl": "/uploads/exp-bafsd-leadership.jpg",
+      "logoAlt": "BAFSD Business Club Logo",
+      "summary": "Ran the IT department during my HSC years and now help as Alumni IT Advisor, showing new committee members how to manage the website and event tools.",
+      "highlights": [
+        "Built and launched the club's 11-page website (React, TypeScript, Firebase, Vercel) with Google Sign-In for admins",
+        "Automated e-certificate generation and bulk email delivery using Google Apps Script and AutoCrat for national events",
+        "Received the Principal's Recognition for Club Contributions (2025)"
+      ],
+      "badge": "Principal's Award (2025)",
+      "link": "https://bafsdbc.vercel.app",
+      "linkLabel": "Club Portal",
+      "ongoing": true,
+      "showOnHome": true,
+      "homeSummary": "Helping the club’s executive committee maintain its 11-page website and automated certificate delivery for business events.",
+      "homeEyebrow": "Software & Club Advisory",
+      "homeTitle": "Alumni IT Advisor",
+      "homeOrganization": "BAFSD Business Club",
+      "homePeriod": "Oct 2025 – Present",
+      "homeLocation": "BAF Shaheen College Dhaka",
+      "homeBullets": [
+        "Maintaining the club's 11-page React, TypeScript, and Firebase website on Vercel",
+        "Running automated e-certificate delivery with Google Apps Script and AutoCrat",
+        "Showing new club members how to manage the site and event registrations"
+      ],
+      "homeBadge": "11-Page React/TS Platform · Firebase & Vercel · Automated E-Certificates",
+      "homeLink": "/experience",
+      "homeLinkLabel": "View Experience"
+    },
+    {
+      "role": "Bronze Award Recipient · Volunteering & Community Service",
+      "organization": "The Duke of Edinburgh's International Award Foundation",
+      "period": "2025",
+      "type": "Youth Volunteering & Leadership",
+      "logoUrl": "/uploads/exp-duke-of-edinburgh.jpg",
+      "logoAlt": "The Duke of Edinburgh's International Award Logo",
+      "summary": "Completed the community service, peer tutoring, skill building, and outdoor expedition parts of the award program.",
+      "highlights": [
+        "Put in regular volunteering hours helping students with reading and basic computer skills",
+        "Finished the group outdoor expedition and physical recreation requirements",
+        "Earned The Duke of Edinburgh's International Bronze Award"
+      ],
+      "badge": "Duke of Edinburgh's Bronze",
+      "link": "",
+      "linkLabel": "",
+      "ongoing": false,
+      "showOnHome": false,
+      "homeSummary": "",
+      "homeEyebrow": "",
+      "homeTitle": "",
+      "homeOrganization": "",
+      "homePeriod": "",
+      "homeLocation": "",
+      "homeBullets": [],
+      "homeBadge": "",
+      "homeLink": "",
+      "homeLinkLabel": ""
+    },
+    {
+      "role": "Social Media Manager",
+      "organization": "Shaheen Runners · BAF Shaheen College Dhaka",
+      "period": "2024 – 2025",
+      "type": "Digital Media & Community Engagement",
+      "logoUrl": "/uploads/exp-shaheen-runners.jpg",
+      "logoAlt": "Shaheen Runners Logo",
+      "summary": "Ran the social media pages and designed posts for Shaheen Runners to get students involved in campus runs and fitness events.",
+      "highlights": [
+        "Made event announcements, graphics, and social media posts",
+        "Helped bring more students out to club runs and fitness events",
+        "Worked with club organizers to cover events and share updates online"
+      ],
+      "badge": "Community Media & Outreach Lead",
+      "link": "",
+      "linkLabel": "",
+      "ongoing": false,
+      "showOnHome": false,
+      "homeSummary": "",
+      "homeEyebrow": "",
+      "homeTitle": "",
+      "homeOrganization": "",
+      "homePeriod": "",
+      "homeLocation": "",
+      "homeBullets": [],
+      "homeBadge": "",
+      "homeLink": "",
+      "homeLinkLabel": ""
+    },
+    {
+      "role": "Academic Peer Mentor & ICTOBD Ambassador",
+      "organization": "ICT Olympiad Bangladesh (ICTOBD) & Student Community",
+      "period": "2023 – Present",
+      "type": "Academic Volunteering & Ambassador",
+      "logoUrl": "/uploads/exp-ictobd.jpg",
+      "logoAlt": "Academic Peer Mentor & Olympiad Volunteer Logo",
+      "summary": "Volunteered as an ICTOBD Campus Ambassador and tutored classmates in Business Studies, finance math, and ICT Olympiad prep.",
+      "highlights": [
+        "Helped classmates practice Time Value of Money (TVM), basic accounting, and ICT Olympiad questions",
+        "Helped run registration and scoring for college business case and quiz competitions",
+        "Placed 1st in BAF Shaheen College Dhaka and reached the ICTOBD National Semifinals (Rank 41)"
+      ],
+      "badge": "1,500+ Students Reached",
+      "link": "https://www.ictolympiadbangladesh.com/team/ambassadors?event=3&loginId=thekazishakib%40gmail.com&division=&team=",
+      "linkLabel": "ICTOBD Profile",
+      "ongoing": false,
+      "showOnHome": false,
+      "homeSummary": "",
+      "homeEyebrow": "",
+      "homeTitle": "",
+      "homeOrganization": "",
+      "homePeriod": "",
+      "homeLocation": "",
+      "homeBullets": [],
+      "homeBadge": "",
+      "homeLink": "",
+      "homeLinkLabel": ""
+    }
+  ]
+}
